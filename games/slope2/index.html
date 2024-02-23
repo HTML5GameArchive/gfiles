@@ -1,0 +1,35 @@
+<!---Hello, what you are seeing here is Slope 2, if you want me to unblock another game, submit an issue on Github with the name of the game as the title!--->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Slope 2 - UBlocker</title>
+<link rel="stylesheet" href="Components/gameloader.css" />
+<script src="Components/gameloader.js"></script>
+<meta charset="UTF-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+<script type="text/javascript">
+      var options = {
+        author: "Vseigru",        
+		logo: "logo.jpg",
+        gameName: "Slope 2",
+		gameNameEu: "Slope 2",
+        gameUrl: "https://slope2.abcya.ga",
+        moreLink: ("https://slope2.abcya.ga"),
+        allowFullscreen: false,
+        locale: "en_US",
+        loader: "5.6.x",
+        loaderOptions: {"moduleJsonUrl": "Components/Slope 2.json", "unityLoaderUrl": "Components/UnityLoader.js"},
+      };
+      GameInit.load(options);
+    </script>
+  <script language="JavaScript" type="text/javascript">
+    //<![CDATA[
+        window.onbeforeunload = function(){
+            return 'Are you sure you want to leave?';
+        };
+    //]]>
+</script>
+</body>
+</html>

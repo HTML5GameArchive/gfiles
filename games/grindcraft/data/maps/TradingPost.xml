@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+
+	<grinders>
+		<item name="overworld" generates="wood" occurance="100" img="overworld.png"></item>
+	</grinders>	
+	
+	<grinds>
+		<item name="hand" img="hand.png" drops="hand=1" dependency="none" timeToBreak="" achievement=""></item>
+		<item name="wood" img="wood.png" drops="wood=1" dependency="hand,wood axe,stone axe,woodsman iron axe,gold axe,diamond axe" timeToBreak="3,1.5,0.75,0.74,0.5,0.375,0.1875" achievement="Tree punched!"></item>
+	</grinds>
+	
+	<crafters>
+		<item ingrediens="nothing=0" requiredItem="wood axe,stone axe,iron axe,gold axe,diamond axe" craftedItems="wood=1" image="wood.png" soundPrefix="wood" type="grind" achievement="nothing" onComplete="nothing" tooltip="Used to craft planks."></item>
+		<item ingrediens="wood=1" requiredItem="nothing" craftedItems="planks=4" image="planks.png" soundPrefix="wood" type="wood" achievement="nothing" onComplete="nothing" tooltip="Used to craft wood tools and items."></item>
+		<item ingrediens="planks=4" requiredItem="nothing" craftedItems="crafting table=1" image="craftingTable.png" soundPrefix="wood" type="wood" achievement="Crafting Table crafted!" onComplete="nothing" tooltip="Required to craft items."></item>
+		<item ingrediens="planks=2" requiredItem="nothing" craftedItems="stick=4" image="stick.png" soundPrefix="wood" type="wood" achievement="nothing" onComplete="nothing" tooltip="Used to craft wood tools and items."></item>
+		<item ingrediens="stick=2,planks=3" requiredItem="crafting table" craftedItems="wood axe=1" image="woodAxe.png" soundPrefix="wood" type="" achievement="Wooden tool crafted!" onComplete="nothing" tooltip="Chops wood."></item>
+		<item ingrediens="wood=7" requiredItem="nothing" craftedItems="big log=1" image="bigLog.png" soundPrefix="wood" type="wood" achievement="nothing" onComplete="nothing" tooltip="Used to build trading post."></item>
+		<item ingrediens="big log=3" requiredItem="nothing" craftedItems="log tier=1" image="logTier.png" soundPrefix="wood" type="wood" achievement="nothing" onComplete="nothing" tooltip="Used to build log tower."></item>
+		<item ingrediens="log tier=8" requiredItem="nothing" craftedItems="log tower=1" image="logTower.png" soundPrefix="wood" type="wood" achievement="nothing" onComplete="nothing" tooltip="Needed to build trading post."></item>
+		<item ingrediens="big log=4" requiredItem="nothing" craftedItems="lodge tier=1" image="lodgeTier.png" soundPrefix="wood" type="wood" achievement="nothing" onComplete="nothing" tooltip="Used to build a lodge base."></item>
+		<item ingrediens="lodge tier=3" requiredItem="nothing" craftedItems="lodge base=1" image="lodgeBase.png" soundPrefix="wood" type="wood" achievement="nothing" onComplete="nothing" tooltip="Used to build a lodge."></item>
+		<item ingrediens="big log=2" requiredItem="nothing" craftedItems="beam=1" image="beam.png" soundPrefix="wood" type="wood" achievement="nothing" onComplete="nothing" tooltip="Used to build a lodge roof."></item>
+		<item ingrediens="beam=5,big log=2" requiredItem="nothing" craftedItems="lodge roof=1" image="lodgeRoof.png" soundPrefix="wood" type="wood" achievement="nothing" onComplete="nothing" tooltip="Used to build a lodge."></item>
+		<item ingrediens="lodge base=1,lodge roof=1" requiredItem="nothing" craftedItems="lodge=1" image="lodge.png" soundPrefix="wood" type="wood" achievement="nothing" onComplete="nothing" tooltip="Needed to build trading post."></item>
+		<item ingrediens="lodge=1,log tower=1" requiredItem="nothing" craftedItems="trading post=1" image="tradingPost.png" soundPrefix="wood" type="wood" achievement="nothing" onComplete="markMap Chasm Mine-441-537,beatLocation" tooltip="Needed to trade."></item>
+		<item ingrediens="nothing=0" requiredItem="trading post" craftedItems="10 emeralds=0" image="emeralds10.png" soundPrefix="metal" type="button" achievement="Emeralds got!" onComplete="purchase 10emeralds" tooltip="Opens up the Kongregate store."></item>
+		<item ingrediens="nothing=0" requiredItem="trading post" craftedItems="30 emeralds=0" image="emeralds30.png" soundPrefix="metal" type="button" achievement="Emeralds got!" onComplete="purchase 30emeralds" tooltip="Opens up the Kongregate store."></item>
+		<item ingrediens="nothing=0" requiredItem="trading post" craftedItems="100 emeralds=0" image="emeralds100.png" soundPrefix="metal" type="button" achievement="Emeralds got!" onComplete="purchase 100emeralds" tooltip="Opens up the Kongregate store."></item>
+		<item ingrediens="nothing=0" requiredItem="trading post" craftedItems="emerald=0" image="emerald.png" soundPrefix="metal" type="" achievement="Emeralds got!" onComplete="nothing" tooltip="Can be traded for items."></item>
+		<item ingrediens="nothing=0" requiredItem="trading post" craftedItems="5 min jukebox=1" image="jukebox.png" soundPrefix="metal" type="button" achievement="Jukebox!" onComplete="purchase jukebox5min-0-5 mins" tooltip="Plays music. Lasts 5 mins{NL}per day."></item>
+		<item ingrediens="emerald=5" requiredItem="trading post" craftedItems="24 hr jukebox=1" image="jukebox.png" soundPrefix="metal" type="trade" achievement="Jukebox!" onComplete="purchase jukebox24hr-5-24 mins" tooltip="Lasts 24 hrs. Plays music."></item>
+		<item ingrediens="nothing=0" requiredItem="trading post" craftedItems="5 min autoclicker=1" image="autoclicker.png" soundPrefix="metal" type="button" achievement="Autoclicker !" onComplete="purchase autoclicker5min-0-5 mins" tooltip="Continuously crafts items with Caps Lock-click. LAsts 5 min. 1 per day."></item>		
+		<item ingrediens="emerald=10" requiredItem="trading post" craftedItems="24 hr autoclicker=1" image="autoclicker.png" soundPrefix="metal" type="trade" achievement="Autoclicker !" onComplete="purchase autoclicker24hr-10-24 hrs" tooltip="Lasts 24 hrs. Continuously crafts items with Caps Lock-click."></item> 
+		<item ingrediens="nothing=0" requiredItem="trading post" craftedItems="5 min x5 multiplier=1" image="x5Multiplier.png" soundPrefix="metal" type="button" achievement="x5 multiplier !" onComplete="purchase x5multiplier5min-0-5 mins" tooltip="Crafts 5 times more with Shift-click. Lasts 5 min per day."></item> 
+		<item ingrediens="emerald=50" requiredItem="trading post" craftedItems="24 hr x5 multiplier=1" image="x5Multiplier.png" soundPrefix="metal" type="trade" achievement="x5 multiplier !" onComplete="purchase x5multiplier24hr-50-24 hrs" tooltip="Crafts 5 times more with Shift-click. Lasts 5 min per day."></item> 
+		<item ingrediens="nothing=0" requiredItem="trading post" craftedItems="5 min x10 multiplier=1" image="x10Multiplier.png" soundPrefix="metal" type="button" achievement="x10 multiplier !" onComplete="purchase x10multiplier5min-0-5 min" tooltip="Crafts 10 times more with Ctrl-click. Lasts 5 min per day."></item> 
+		<item ingrediens="emerald=100" requiredItem="trading post" craftedItems="24 hr x10 multiplier=1" image="x10Multiplier.png" soundPrefix="metal" type="trade" achievement="x10 multiplier !" onComplete="purchase x5multiplier24hr-100-24 hrs" tooltip="Lasts 24 hrs. Crafts 5 times more with Shift-click."></item> 
+	</crafters>
+	
+	
+</data>

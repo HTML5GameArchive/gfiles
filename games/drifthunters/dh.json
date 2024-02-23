@@ -1,0 +1,13 @@
+{
+    "TOTAL_MEMORY": 1073741824,
+    "dataUrl": "https://catgamesa.github.io/drfhunter/dh.data.unityweb",
+    "asmCodeUrl": "https://catgamesa.github.io/drfhunter/dh.asm.code.unityweb",
+    "asmMemoryUrl": "https://catgamesa.github.io/drfhunter/dh.asm.memory.unityweb",
+    "asmFrameworkUrl": "https://catgamesa.github.io/drfhunter/dh.asm.framework.unityweb",
+    "backgroundUrl": "",
+    "splashScreenStyle": "Dark",
+    "backgroundColor": "#111111",
+    "totalFile": 6,
+    "size": 134902255,
+    "split_size": 22483710
+}

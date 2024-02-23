@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Highway Traffic</title>
+    <meta name="robots" content="noindex,nofollow" />
+	
+	<meta property="og:title" content="Highway Traffic" />
+	<meta property="og:image" content="512.jpg" />
+
+	
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+	
+	<script type="text/javascript" async>
+    !function(e,t){a=e.createElement("script"),m=e.getElementsByTagName("script")[0],a.async=1,a.src=t,m.parentNode.insertBefore(a,m)}(document,"https://universal.wgplayer.com/tag/?lh="+window.location.hostname+"&wp="+window.location.pathname+"&ws="+window.location.search);
+	</script>
+	
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	
+    <script src="TemplateData/UnityProgress.js"></script>  
+    <script src="Build/UnityLoader.js"></script>
+
+    <script>
+	
+	function InitApi(_appId) 
+    {
+		var dateNow = new Date();
+		var secondsSinceEpoch = Math.round(dateNow.getTime() / 1000);
+		
+		console.log('InitApi');
+		
+		window.callTime = secondsSinceEpoch - 121;
+    }
+    
+    function ExternEval() 
+    {
+		console.log("ExternEval");
+		
+		var dateNow = new Date();
+		var secondsSinceEpoch = Math.round(dateNow.getTime() / 1000);
+		
+		if (window.callTime != undefined && 
+			secondsSinceEpoch - window.callTime > 120)
+		{
+			console.log('ExternEval 2');
+			
+			window.callTime = secondsSinceEpoch;
+			
+			if (typeof preroll !== 'undefined')
+			{
+				if (window[preroll.config.loaderObjectName] != undefined)
+				{
+					gameInstance.SendMessage('GameDistribution', 'PauseGame');
+				
+					try {
+						window[preroll.config.loaderObjectName].refetchAd(ExternEvalResumeGame);
+					}
+					catch(err) {
+						console.log(err.message);
+						gameInstance.SendMessage('GameDistribution', 'ResumeGame');
+					}
+				}
+			}
+		}
+		
+    }
+	
+	function ExternEvalResumeGame()
+	{
+		console.log("ExternEvalResumeGame");
+	
+		gameInstance.SendMessage('GameDistribution', 'ResumeGame');
+	}
+	
+	function PreloadRewarded() 
+	{
+		console.log("PreloadRewarded");
+	
+		if (window.rewardedCallbacks == undefined)
+		{
+			window.rewardedCallbacks = true;
+			
+			try {
+				window[window.preroll.config.loaderObjectName].registerRewardCallbacks({
+					onReady:RewardedReady, 
+					onSuccess:RewardedSuccess, 
+					onFail:RewardedFail
+				});
+			}
+			catch(err) {
+				console.log(err.message);
+			}
+		}
+	}
+		
+	function ShowRewarded() 
+	{
+		console.log("ShowRewarded");
+	
+		if (typeof preroll !== 'undefined')
+		{
+			if (window[preroll.config.loaderObjectName] != undefined)
+			{
+				window.gameInstance.SendMessage('GameDistribution', 'PauseGame');
+			
+				try {
+					window[preroll.config.loaderObjectName].showRewardAd();
+				}
+				catch(err) {
+					console.log(err.message);
+					window.gameInstance.SendMessage('GameDistribution', 'ResumeGame');
+				}
+			}
+		}
+	
+	}
+	
+	function RewardedReady()
+	{
+		console.log("RewardedReady");
+		
+		if (window.rewardedCount == undefined)
+		{
+			window.rewardedCount = 1;
+			window.gameInstance.SendMessage('GameDistribution', 'RewardedReady');
+		}
+		else{
+			window.rewardedCount = window.rewardedCount + 1;
+			setTimeout(function(){ window.gameInstance.SendMessage('GameDistribution', 'RewardedReady'); }, 30000);
+		}
+		
+	}
+	
+	function RewardedSuccess()
+	{
+		console.log("RewardedSuccess");
+	
+		window.gameInstance.SendMessage('GameDistribution', 'ResumeGame');
+	}
+	
+	function RewardedFail()
+	{
+		console.log("RewardedFail");
+	
+		window.gameInstance.SendMessage('GameDistribution', 'ResumeGame');
+	}
+	
+	InitApi(0);
+	
+    var gameInstance = UnityLoader.instantiate("gameContainer", "Build/game.json", {onProgress: UnityProgress});
+	  
+	    function FitScreen(){
+       var w = 960;
+       var h = 540;
+       var availWidth = window.innerWidth;
+       var availHeight = window.innerHeight;
+	   
+       var canvas = document.getElementById("#canvas");
+       if(availWidth/availHeight>w/h){
+         height = availHeight;
+         width = (height*w/h);
+      }else{
+         width = availWidth;
+         height = width*h/w;
+      }
+	  
+      canvas.width = width;
+      canvas.height = height;
+	  
+       document.getElementById("gameContainer").style.width=width + "px";
+       document.getElementById("gameContainer").style.height=height + "px";
+	   
+    }
+
+    </script>
+  </head>
+  <body onfocus="FitScreen();" onload="FitScreen();" onresize="FitScreen();" style="width:100%; height:100%">
+    <div class="webgl-content">
+      <div id="gameContainer" style="width: auto; height: auto"></div>
+    </div>
+  </body>
+</html>

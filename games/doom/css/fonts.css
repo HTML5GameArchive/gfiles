@@ -1,0 +1,11 @@
+@font-face {
+	font-family: 'DooM';
+	src: url('../fonts/DooM.eot');
+	src: url('../fonts/DooM.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/DooM.woff2') format('woff2'),
+	url('../fonts/DooM.woff') format('woff'),
+	url('../fonts/DooM.ttf') format('truetype'),
+	url('../fonts/DooM.svg#DooM') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}

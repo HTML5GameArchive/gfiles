@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+	
+	<maps>
+		<map>CityState</map>
+		<map>TradingPost</map>
+		<map>ChasmMine</map>
+		<map>LostMine</map>
+		<map>ApothecarySchool</map>
+		<map>LieBury</map>
+		<map>Hogquartz</map>
+		<map>ObsidianYards</map>
+		<map>StrongsIsle</map>
+	</maps>
+	
+	<current_map>0</current_map>
+	
+	<markers>
+		<marker>City State,615,615</marker>
+		<marker>Trading Post,966,426</marker>
+		<marker>Chasm Mine,966,426</marker>
+		<marker>Lost Mine,748,811</marker>
+		<marker>Apothecary School,268,351</marker>
+		<marker>Lie Bury,175,1002</marker>
+		<marker>Hogquartz,305,366</marker>
+		<marker>Obsidian Yards,652,589</marker>
+		<marker>Strongs Isle,207,1041</marker>
+	</markers>
+	
+	
+	<images></images>
+	
+	
+	
+</data>

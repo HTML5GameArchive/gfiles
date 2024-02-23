@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+	<grinders>
+		<item name="nether sleigh" generates="zombie pigman,nether quartz ore,blaze,nether wart,ghast" occurance="1.75,10,1.75,1,1.75" img="netherSleighGrinder.png" maxIncrease="5"/>
+		<item name="overworld" generates="wood,sand,sugar cane,dirt,water" occurance="4,65,29,32,65" img="overworld.png" maxIncrease="5"/>
+		<item name="cavern" generates="stone,gravel,coal ore,iron ore,gold ore,diamond ore,redstone ore,obsidian" occurance="5,1,6,4,2,1,4,2" img="mine.png" maxIncrease="5"/>
+		<item name="mobs" generates="pig,sheep,cow,zombie,skeleton,spider" occurance="1.75,1.75,1.75,1.75,1.75,1.75" img="mobs.png" maxIncrease="5"/>
+	</grinders>
+		
+	<grinds>
+		<item name="zombie pigman" img="zombiePigman.png" drops="zombie pigman=1" dependency="portal sleigh" timeToBreak="2.49" achievement=""/>
+		<item name="nether quartz ore" img="netherQuartzOre.png" drops="nether quartz=1" dependency="quartz hog" timeToBreak="1" achievement=""/>
+		<item name="nether quartz" img="netherQuartz.png" drops="" dependency="" timeToBreak="" achievement=""/>
+		<item name="blaze" img="blaze.png" drops="blaze rod=.5" dependency="portal sleigh" timeToBreak="5" achievement=""/>
+		<item name="blaze rod" img="blazeRod.png" drops="" dependency="" timeToBreak="" achievement=""/>
+		<item name="ghast" img="ghast.png" drops="gunpowder=1" dependency="portal sleigh" timeToBreak="4.5" achievement=""/>
+		<item name="gunpowder" img="gunpowder.png" drops="" dependency="" timeToBreak="" achievement=""/>
+		<item name="nether wart" img="netherWart.png" drops="nether wart=1" dependency="portal sleigh" timeToBreak="0.5" achievement=""/>
+		<item name="wood" img="wood.png" drops="wood=1" dependency="woodsman" timeToBreak="0.74" achievement=""/>
+		<item name="sand" img="sand.png" drops="sand=1" dependency="woodsman" timeToBreak="0.1874" achievement=""/>
+		<item name="sugar cane" img="sugarCane.png" drops="sugar=1" dependency="woodsman" timeToBreak="0.5" achievement=""/>
+		<item name="sugar" img="sugar.png" drops="" dependency="" timeToBreak="" achievement=""/>
+		<item name="dirt" img="dirt.png" drops="nothing=0" dependency="woodsman" timeToBreak="0.1874" achievement=""/>
+		<item name="water" img="water.png" drops="nothing=0" dependency="woodsman" timeToBreak="0.1875" achievement=""/>
+		<item name="stone" img="stone.png" drops="cobblestone=1" dependency="woodsman" timeToBreak="0.5624" achievement=""/>
+		<item name="cobblestone" img="cobblestone.png" drops="" dependency="" timeToBreak="" achievement=""/>
+		<item name="gravel" img="gravel.png" drops="flint=.1" dependency="woodsman" timeToBreak="0.224" achievement=""/>
+		<item name="flint" img="flint.png" drops="" dependency="" timeToBreak="" achievement=""/>
+		<item name="coal ore" img="coalOre.png" drops="coal=1" dependency="miner" timeToBreak="0.75" achievement=""/>
+		<item name="coal" img="coal.png" drops="" dependency="" timeToBreak="" achievement=""/>
+		<item name="iron ore" img="ironOre.png" drops="iron ore=1" dependency="miner" timeToBreak="1.125" achievement=""/>
+		<item name="gold ore" img="goldOre.png" drops="gold ore=1" dependency="miner" timeToBreak="1.8" achievement=""/>
+		<item name="diamond ore" img="diamondOre.png" drops="diamond=1" dependency="miner" timeToBreak="1.8" achievement=""/>
+		<item name="diamond" img="diamond.png" drops="" dependency="" timeToBreak="" achievement=""/>
+		<item name="redstone ore" img="redstoneOre.png" drops="redstone=4" dependency="miner" timeToBreak="1.125" achievement=""/>
+		<item name="redstone" img="redstone.png" drops="" dependency="" timeToBreak="" achievement=""/>
+		<item name="obsidian" img="obsidian.png" drops="obsidian=1" dependency="miner" timeToBreak="5" achievement=""/>
+		<item name="pig" img="pig.png" drops="nothing=0" dependency="hunter" timeToBreak="0.98" achievement=""/>
+		<item name="sheep" img="sheep.png" drops="nothing=0" dependency="hunter" timeToBreak="0.78" achievement=""/>
+		<item name="cow" img="cow.png" drops="leather=2" dependency="hunter" timeToBreak="1" achievement=""/>
+		<item name="leather" img="leather.png" drops="" dependency="" timeToBreak="" achievement=""/>
+		<item name="zombie" img="zombie.png" drops="nothing=0" dependency="hunter" timeToBreak="2.48" achievement=""/>
+		<item name="skeleton" img="skeleton.png" drops="arrow=.5" dependency="hunter" timeToBreak="2.18" achievement=""/>
+		<item name="arrow" img="arrow.png" drops="" dependency="" timeToBreak="" achievement=""/>
+		<item name="spider" img="spider.png" drops="string=.5" dependency="hunter" timeToBreak="1.78" achievement=""/>
+		<item name="string" img="string.png" drops="" dependency="" timeToBreak="" achievement=""/>
+	</grinds>
+	
+	<crafters>
+		<item ingrediens="nothing=0" requiredItem="nether sleigh" craftedItems="zombie pigman=1" image="zombiePigman.png" soundPrefix="hand" type="grind" achievement="Zombie pigman trapped !" onComplete="nothing" tooltip="Required to turn zombie pigmen."/>
+		<item ingrediens="nothing=0" requiredItem="nothing" craftedItems="priest=1" image="priest.png" soundPrefix="hand" type="" achievement="nothing" onComplete="autocraft pigman=1" tooltip="Required to turn zombie pigmen."/>
+		<item ingrediens="zombie pigman=1" requiredItem="priest" craftedItems="pigman=1" image="pig.png" soundPrefix="" type="" achievement="Chinny chin chin !" onComplete="nothing" tooltip="Can build stuff."/>
+		<item ingrediens="pigman=1" requiredItem="nothing" craftedItems="pigman worker=1" image="pigmanWorker.png" soundPrefix="hand" type="" achievement="Pigman trained !" onComplete="automate nether sleigh" tooltip="Required to make a quartz hog."/>
+		<item ingrediens="nothing=0" requiredItem="nothing" craftedItems="wizard=1" image="wizard.png" soundPrefix="hand" type="villager" achievement="nothing" onComplete="nothing" tooltip="Turns pigman workers into quartz hogs."/>
+		<item ingrediens="pigman worker=1" requiredItem="wizard" craftedItems="quartz hog=1" image="quartzHog.png" soundPrefix="hand" type="" achievement="Quartz hog trained !" onComplete="autocraft block of quartz=.5" tooltip="Required to mine nether quartz ore."/>
+		<item ingrediens="nothing=0" requiredItem="quartz hog" craftedItems="nether quartz=1" image="netherQuartz.png" soundPrefix="metal" type="grind" achievement="Nether quartz mined !" onComplete="nothing" tooltip="Makes block of quartz."/>
+		<item ingrediens="nether quartz=4" requiredItem="quartz hog" craftedItems="block of quartz=1" image="blockOfQuartz.png" soundPrefix="metal" type="" achievement="Block of quartz made !" onComplete="nothing" tooltip="Required to make quartz structures."/>
+		<item ingrediens="block of quartz=9" requiredItem="contractor" craftedItems="quartz wall=1" image="quartzWall.png" soundPrefix="metal" type="" achievement="Quartz wall built !" onComplete="nothing" tooltip="Required to make rooms out of quartz."/>
+		<item ingrediens="quartz wall=5" requiredItem="contractor" craftedItems="quartz hut=1" image="quartzHut.png" soundPrefix="metal" type="" achievement="Quartz hut built !" onComplete="nothing" tooltip="Required to make larger structures."/>
+		<item ingrediens="bookcase=15" requiredItem="nothing" craftedItems="ton of books=1" image="tonOfBooks.png" soundPrefix="wood" type="" achievement="Ton of books !" onComplete="nothing" tooltip="Used to transport books."/>
+		<item ingrediens="ton of books=1" requiredItem="nothing" craftedItems="bookshelf=72" image="bookshelf.png" soundPrefix="wood" type="" achievement="Ton of books dumped !" onComplete="nothing" tooltip="Dumps a ton of books."/>
+		<item ingrediens="bookshelf=12" requiredItem="carpenter" craftedItems="book stacks=1" image="bookStacks.png" soundPrefix="wood" type="" achievement="Book stacks !" onComplete="nothing" tooltip="Used to make a library room."/>
+		<item ingrediens="quartz hut=1,book stacks=1" requiredItem="contractor" craftedItems="library room=1" image="libraryRoom.png" soundPrefix="metal" type="" achievement="Library room built !" onComplete="nothing" tooltip="Used to make quartz classrooms."/>
+		<item ingrediens="block of quartz=6" requiredItem="quartz hog" craftedItems="quartz stairs=4" image="quartzStairs.png" soundPrefix="metal" type="" achievement="Quartz stairs crafted !" onComplete="nothing" tooltip="Used to make things out of quartz."/>
+		<item ingrediens="nothing=0" requiredItem="woodsman" craftedItems="wood=1" image="wood.png" soundPrefix="wood" type="grind" achievement="nothing" onComplete="nothing" tooltip="Used to craft planks and logs."/>
+		<item ingrediens="wood=1" requiredItem="carpenter" craftedItems="planks=4" image="planks.png" soundPrefix="wood" type="" achievement="nothing" onComplete="nothing" tooltip="Used to make stuff out of wood."/>
+		<item ingrediens="planks=2" requiredItem="carpenter" craftedItems="stick=4" image="stick.png" soundPrefix="wood" type="" achievement="nothing" onComplete="nothing" tooltip="Used to make a gate."/>
+		<item ingrediens="planks=4,stick=1" requiredItem="carpenter" craftedItems="sign=3" image="sign.png" soundPrefix="wood" type="" achievement="Signs crafted !" onComplete="nothing" tooltip="Used to make a chalkboard"/>
+		<item ingrediens="sign=6" requiredItem="carpenter" craftedItems="chalkboard=1" image="chalkboard.png" soundPrefix="wood" type="" achievement="Chalkboard built !" onComplete="nothing" tooltip="Used in classrooms."/>
+		<item ingrediens="quartz hut=1,quartz stairs=2,chalkboard=1" requiredItem="contractor" craftedItems="classroom=1" image="classroom.png" soundPrefix="metal" type="" achievement="Classroom built !" onComplete="nothing" tooltip="Used to make quartz classrooms."/>
+		<item ingrediens="nothing=0" requiredItem="nether sleigh" craftedItems="blaze rod=1" image="blazeRod.png" soundPrefix="metal" type="grind" achievement="Blaze rod !" onComplete="nothing" tooltip="Used to make potions."/>
+		<item ingrediens="cobblestone=3,blaze rod=1" requiredItem="nothing" craftedItems="brewing stand=1" image="brewingStand.png" soundPrefix="whoosh" type="" achievement="Brewing stand made !" onComplete="nothing" tooltip="Required to make apothecary school."/>
+		<item ingrediens="quartz stairs=2" requiredItem="quartz hog" craftedItems="quartz table=1" image="quartzTable.png" soundPrefix="metal" type="" achievement="Quartz table built !" onComplete="nothing" tooltip="Used in laboratories."/>
+		<item ingrediens="quartz hut=1,quartz table=1,chalkboard=1" requiredItem="contractor" craftedItems="lab=1" image="lab.png" soundPrefix="metal" type="" achievement="Lab built !" onComplete="nothing" tooltip="Used to make quartz classrooms."/>
+		<item ingrediens="block of quartz=3" requiredItem="quartz hog" craftedItems="quartz slab=6" image="quartzSlab.png" soundPrefix="metal" type="" achievement="Quartz slab crafted !" onComplete="nothing" tooltip="Used to make a spiral riser."/>
+		<item ingrediens="quartz slab=2,block of quartz=1" requiredItem="quartz hog" craftedItems="spiral riser=1" image="quartzSpiralRiser.png" soundPrefix="metal" type="" achievement="Spiral riser made !" onComplete="nothing" tooltip="Used to make a spiral staircase."/>
+		<item ingrediens="spiral riser=4" requiredItem="quartz hog" craftedItems="spiral staircase=1" image="quartzSpiralStaircase.png" soundPrefix="metal" type="" achievement="Spiral staircase built !" onComplete="nothing" tooltip="Used to make a spiral stairwell."/>
+		<item ingrediens="quartz hut=1,spiral staircase=1" requiredItem="contractor" craftedItems="quartz stairwell=1" image="quartzStairwell.png" soundPrefix="metal" type="" achievement="Quartz stairwell built !" onComplete="nothing" tooltip="Used to make quartz classrooms."/>
+		<item ingrediens="library room=1,classroom=1,lab=1,quartz stairwell=1" requiredItem="contractor" craftedItems="quartz classrooms=1" image="quartzClassrooms.png" soundPrefix="metal" type="" achievement="Quartz classrooms !" onComplete="nothing" tooltip="Used to make a school."/>
+		<item ingrediens="block of quartz=41" requiredItem="quartz hog" craftedItems="small dome=1" image="smallDome.png" soundPrefix="metal" type="" achievement="Small dome built !" onComplete="nothing" tooltip="Required to make a gazebo."/>
+		<item ingrediens="block of quartz=2" requiredItem="quartz hog" craftedItems="pillar quartz block=2" image="pillarQuartzBlock.png" soundPrefix="metal" type="" achievement="Pillar quartz block !" onComplete="nothing" tooltip="Used to make a quartz pillar."/>
+		<item ingrediens="pillar quartz block=4" requiredItem="quartz hog" craftedItems="quartz pillar=1" image="quartzPillar.png" soundPrefix="metal" type="" achievement="Quartz pillar made !" onComplete="nothing" tooltip="Used to make columns and gazebos."/>
+		<item ingrediens="small dome=1,quartz pillar=4" requiredItem="contractor" craftedItems="gazebo=1" image="gazebo.png" soundPrefix="metal" type="" achievement="Gazebo built !" onComplete="nothing" tooltip="Used with other quartz buildings."/>
+		<item ingrediens="block of quartz=25" requiredItem="quartz hog" craftedItems="quartz pavement=1" image="quartzPavement.png" soundPrefix="metal" type="" achievement="Quartz paved !" onComplete="nothing" tooltip="Used to pave under structures."/>
+		<item ingrediens="quartz classrooms=2,gazebo=7,quartz pavement=7" requiredItem="contractor" craftedItems="quad=1" image="quad.png" soundPrefix="metal" type="" achievement="Quad built !" onComplete="nothing" tooltip="Used to make Alchemist School."/>
+		<item ingrediens="quad=1" requiredItem="contractor" craftedItems="quad=0" image="quad.png" soundPrefix="metal" type="melter" achievement="Quad demolished !" onComplete="drop quartz classrooms=2-gazebo=7-quartz pavement=7" tooltip="Demolishes a Quad into it&#039;s parts."/>
+		<item ingrediens="quartz stairs=15" requiredItem="quartz hog" craftedItems="quartz staircase=1" image="quartzStaircase.png" soundPrefix="metal" type="" achievement="Quartz staircase !" onComplete="nothing" tooltip="Used to make Alchemist School."/>
+		<item ingrediens="gazebo=1,quartz pillar=2,quartz staircase=1,quad=1" requiredItem="contractor" craftedItems="alchemist school=1" image="alchemistSchool.png" soundPrefix="metal" type="" achievement="Alchemist School !" onComplete="nothing" tooltip="Part of Hogquartz."/>
+		<item ingrediens="nothing=0" requiredItem="alchemist school" craftedItems="alchemist school exporter=1" image="alchemistSchool.png" soundPrefix="" type="" achievement="nothing" onComplete="navigateToUrl 1J0kPK" tooltip="Download."/>
+		<item ingrediens="alchemist school=1" requiredItem="contractor" craftedItems="alchemist school=0" image="alchemistSchool.png" soundPrefix="metal" type="melter" achievement="School demolished !" onComplete="drop gazebo=1-quartz pillar=2-quartz staircase=1-quad=1" tooltip="Demolishes a school into it&#039;s parts."/>
+		<item ingrediens="quartz stairs=8" requiredItem="quartz hog" craftedItems="column base=1" image="columnBase.png" soundPrefix="metal" type="" achievement="Column base made !" onComplete="nothing" tooltip="Used to make a column."/>
+		<item ingrediens="quartz stairs=8" requiredItem="quartz hog" craftedItems="column capital=1" image="columnCapital.png" soundPrefix="metal" type="" achievement="Column capital made !" onComplete="nothing" tooltip="Used to make a column."/>
+		<item ingrediens="quartz pillar=1,column base=1,column capital=1" requiredItem="quartz hog" craftedItems="column=1" image="column.png" soundPrefix="metal" type="" achievement="Column built !" onComplete="nothing" tooltip="Used to make pavilions and colonnades."/>
+		<item ingrediens="column=6" requiredItem="contractor" craftedItems="colonnade=1" image="colonnade.png" soundPrefix="metal" type="" achievement="Colonnade built !" onComplete="nothing" tooltip="Used to make a school."/>
+		<item ingrediens="block of quartz=245" requiredItem="contractor" craftedItems="large dome=1" image="largeDome.png" soundPrefix="metal" type="" achievement="Large dome built !" onComplete="nothing" tooltip="Used to make a pavillion."/>
+		<item ingrediens="column=8" requiredItem="quartz hog" craftedItems="quartz henge=1" image="quartzHenge.png" soundPrefix="metal" type="" achievement="Quartz henge built !" onComplete="nothing" tooltip="Used to make a pavillion."/>
+		<item ingrediens="quartz henge=1,large dome=1" requiredItem="contractor" craftedItems="pavilion=1" image="pavilion.png" soundPrefix="metal" type="" achievement="Pavilion built !" onComplete="nothing" tooltip="Used to make a school."/>
+		<item ingrediens="quartz classrooms=4,quartz henge=2,pavilion=1,colonnade=1" requiredItem="contractor" craftedItems="redstone school=1" image="redstoneSchool.png" soundPrefix="metal" type="" achievement="Redstone school !" onComplete="nothing" tooltip="Part of Hogquartz."/>
+		<item ingrediens="redstone school=1" requiredItem="contractor" craftedItems="redstone school=0" image="redstoneSchool.png" soundPrefix="metal" type="melter" achievement="School demolished !" onComplete="drop quartz classrooms=4-quartz henge=2-pavilion=1-colonnade=1" tooltip="Demolishes a school into it&#039;s parts."/>
+		<item ingrediens="nothing=0" requiredItem="nothing" craftedItems="apothecary school=1" image="apothecarySchool.png" soundPrefix="metal" type="" achievement="Apothecary school !" onComplete="nothing" tooltip="Part of Hogquartz."/>
+		<item ingrediens="apothecary school=1,alchemist school=1,redstone school=1" requiredItem="nothing" craftedItems="hogquartz=1" image="hogquartz.png" soundPrefix="metal" type="" achievement="Hogquartz built !" onComplete="markMap Obsidian Yards-652-589,beatLocation" tooltip="Trains up advanced crafters."/>
+		<item ingrediens="nothing=0" requiredItem="hogquartz" craftedItems="hogquartz exporter=1" image="hogquartz.png" soundPrefix="" type="" achievement="nothing" onComplete="navigateToUrl 1J1363" tooltip="Download."/>
+		<item ingrediens="wizard=1" requiredItem="hogquartz" craftedItems="apothecary=1" image="apothecary.png" soundPrefix="hand" type="" achievement="Apothecary trained !" onComplete="nothing" tooltip="Used to make potions and explosives."/>
+		<item ingrediens="wizard=1" requiredItem="hogquartz" craftedItems="alchemist=1" image="alchemist.png" soundPrefix="hand" type="" achievement="Alchemist trained !" onComplete="nothing" tooltip="Used to transform metals and crystals."/>
+		<item ingrediens="wizard=1" requiredItem="hogquartz" craftedItems="redstone wizard=1" image="redstoneWizard.png" soundPrefix="hand" type="" achievement="Redstone wizard !" onComplete="nothing" tooltip="Used to make contraptions from redstone."/>
+		<item ingrediens="nothing=0" requiredItem="portal sleigh" craftedItems="nether wart=1" image="netherWart.png" soundPrefix="whoosh" type="grind" achievement="Nether wart picked !" onComplete="nothing" tooltip="Used in potions."/>
+		<item ingrediens="nothing=0" requiredItem="hunter" craftedItems="sugar=1" image="sugar.png" soundPrefix="metal" type="grind" achievement="Sugar dropped !" onComplete="nothing" tooltip="Required to make potions."/>
+		<item ingrediens="nether wart=1,sugar=1" requiredItem="apothecary" craftedItems="speed potion=1" image="potion.png" soundPrefix="hand" type="" achievement="Potion crafted !" onComplete="nothing" tooltip="Can be drank."/>
+		<item ingrediens="speed potion=1" requiredItem="nothing" craftedItems="use speed potion=1" image="usePotion.png" soundPrefix="hand" type="" achievement="Potion drank !" onComplete="speed 200" tooltip="Has speedy properties."/>
+		<item ingrediens="nothing=0" requiredItem="nothing" craftedItems="miner=1" image="miner.png" soundPrefix="hand" type="" achievement="nothing" onComplete="nothing" tooltip="Mines the cavern."/>
+		<item ingrediens="nothing=0" requiredItem="nothing" craftedItems="hunter=1" image="hunter.png" soundPrefix="hand" type="" achievement="nothing" onComplete="nothing" tooltip="Fights mobs."/>
+		<item ingrediens="nothing=0" requiredItem="nothing" craftedItems="woodsman=1" image="woodsman.png" soundPrefix="hand" type="villager" achievement="nothing" onComplete="nothing" tooltip="Automates overworld grinder."/>
+		<item ingrediens="nothing=0" requiredItem="nothing" craftedItems="carpenter=1" image="carpenter.png" soundPrefix="hand" type="villager" achievement="nothing" onComplete="nothing" tooltip="Makes stuff out of wood."/>
+		<item ingrediens="nothing=0" requiredItem="nothing" craftedItems="contractor=1" image="contractor.png" soundPrefix="hand" type="villager" achievement="nothing" onComplete="nothing" tooltip="Makes quartz buildings."/>
+		<item ingrediens="nothing=0" requiredItem="woodsman" craftedItems="sand=1" image="sand.png" soundPrefix="dirt" type="grind" achievement="Sand dug !" onComplete="nothing" tooltip="Makes a sand column."/>
+		<item ingrediens="nothing=0" requiredItem="miner" craftedItems="cobblestone=1" image="cobblestone.png" soundPrefix="metal" type="grind" achievement="nothing" onComplete="nothing" tooltip="Used to make buildings."/>
+		<item ingrediens="nothing=0" requiredItem="miner" craftedItems="flint=1" image="flint.png" soundPrefix="dirt" type="grind" achievement="nothing" onComplete="nothing" tooltip="Used to craft arrows."/>
+		<item ingrediens="nothing=0" requiredItem="miner" craftedItems="rail=1" image="rail.png" soundPrefix="metal" type="grind" achievement="nothing" onComplete="nothing" tooltip="Required to build railways."/>
+		<item ingrediens="nothing=0" requiredItem="miner" craftedItems="coal=1" image="coal.png" soundPrefix="metal" type="grind" achievement="nothing" onComplete="nothing" tooltip="Used to smelt ingots."/>
+		<item ingrediens="nothing=0" requiredItem="miner" craftedItems="iron ore=1" image="ironOre.png" soundPrefix="metal" type="grind" achievement="nothing" onComplete="nothing" tooltip="Required to smelt iron ingots."/>
+		<item ingrediens="nothing=0" requiredItem="miner" craftedItems="gold ore=1" image="goldOre.png" soundPrefix="metal" type="grind" achievement="nothing" onComplete="nothing" tooltip="Required to smelt gold ingots."/>
+		<item ingrediens="nothing=0" requiredItem="miner" craftedItems="diamond=1" image="diamond.png" soundPrefix="metal" type="grind" achievement="nothing" onComplete="nothing" tooltip="Used to craft diamond tools and items."/>
+		<item ingrediens="nothing=0" requiredItem="miner" craftedItems="redstone=4" image="redstone.png" soundPrefix="metal" type="grind" achievement="nothing" onComplete="nothing" tooltip="Used to make redstone devices."/>
+		<item ingrediens="nothing=0" requiredItem="miner" craftedItems="obsidian=1" image="obsidian.png" soundPrefix="metal" type="grind" achievement="nothing" onComplete="nothing" tooltip="Used to build objects out of obsidian."/>
+		<item ingrediens="nothing=0" requiredItem="miner" craftedItems="bucket=1" image="bucket.png" soundPrefix="metal" type="grind" achievement="Bucket crafted !" onComplete="nothing" tooltip="Required to get water and lava."/>
+		<item ingrediens="nothing=0" requiredItem="miner" craftedItems="gunpowder=1" image="gunpowder.png" soundPrefix="whoosh" type="grind" achievement="Gunpowder !" onComplete="nothing" tooltip="Used in explosives"/>
+		<item ingrediens="nothing=0" requiredItem="hunter" craftedItems="gold armor=1" image="goldArmor.png" soundPrefix="metal" type="grind" achievement="Gold armor !" onComplete="nothing" tooltip="For making gold soldiers."/>
+		<item ingrediens="nothing=0" requiredItem="hunter" craftedItems="gold sword=1" image="goldSword.png" soundPrefix="metal" type="grind" achievement="nothing" onComplete="nothing" tooltip="Attacks mobs."/>
+		<item ingrediens="nothing=0" requiredItem="hunter" craftedItems="iron armor=1" image="ironArmor.png" soundPrefix="metal" type="grind" achievement="Iron armor !" onComplete="nothing" tooltip="For making iron soldiers."/>
+		<item ingrediens="nothing=0" requiredItem="hunter" craftedItems="iron axe=1" image="ironAxe.png" soundPrefix="metal" type="grind" achievement="nothing" onComplete="nothing" tooltip="Chops wood."/>
+		<item ingrediens="nothing=0" requiredItem="nothing" craftedItems="string=1" image="string.png" soundPrefix="whoosh" type="grind" achievement="nothing" onComplete="nothing" tooltip="Used to make a lead."/>
+		<item ingrediens="nothing=0" requiredItem="nothing" craftedItems="arrow=1" image="arrow.png" soundPrefix="whoosh" type="grind" achievement="nothing" onComplete="nothing" tooltip="Combined with bow."/>
+		<item ingrediens="nothing=0" requiredItem="nothing" craftedItems="iron pick=1" image="ironPick.png" soundPrefix="metal" type="metal" achievement="nothing" onComplete="nothing" tooltip="Mines gold."/>
+		<item ingrediens="nothing=0" requiredItem="nothing" craftedItems="iron shovel=1" image="ironShovel.png" soundPrefix="metal" type="metal" achievement="nothing" onComplete="nothing" tooltip="Shovels dirt and gravel."/>
+		<item ingrediens="nothing=0" requiredItem="nothing" craftedItems="iron hoe=1" image="ironHoe.png" soundPrefix="metal" type="metal" achievement="nothing" onComplete="nothing" tooltip="Tills soil."/>
+		<item ingrediens="nothing=0" requiredItem="nothing" craftedItems="iron sword=1" image="ironSword.png" soundPrefix="metal" type="metal" achievement="nothing" onComplete="nothing" tooltip="Attacks mobs."/>
+		<item ingrediens="nothing=0" requiredItem="nothing" craftedItems="gold pick=1" image="goldPick.png" soundPrefix="metal" type="metal" achievement="nothing" onComplete="nothing" tooltip="Mines diamond."/>
+		<item ingrediens="nothing=0" requiredItem="nothing" craftedItems="gold shovel=1" image="goldShovel.png" soundPrefix="metal" type="metal" achievement="nothing" onComplete="nothing" tooltip="Shovels dirt and gravel."/>
+		<item ingrediens="nothing=0" requiredItem="nothing" craftedItems="gold axe=1" image="goldAxe.png" soundPrefix="metal" type="metal" achievement="nothing" onComplete="nothing" tooltip="Chops wood."/>
+		<item ingrediens="nothing=0" requiredItem="nothing" craftedItems="gold hoe=1" image="goldHoe.png" soundPrefix="metal" type="metal" achievement="nothing" onComplete="nothing" tooltip="Tills soil."/>
+		<item ingrediens="nothing=0" requiredItem="nothing" craftedItems="diamond pick=1" image="diamondPick.png" soundPrefix="metal" type="metal" achievement="nothing" onComplete="nothing" tooltip="Mines faster."/>
+		<item ingrediens="nothing=0" requiredItem="nothing" craftedItems="diamond shovel=1" image="diamondShovel.png" soundPrefix="metal" type="metal" achievement="nothing" onComplete="nothing" tooltip="Shovels dirt and gravel."/>
+		<item ingrediens="nothing=0" requiredItem="nothing" craftedItems="diamond sword=1" image="diamondSword.png" soundPrefix="metal" type="metal" achievement="nothing" onComplete="nothing" tooltip="Attacks mobs."/>
+		<item ingrediens="nothing=0" requiredItem="nothing" craftedItems="diamond axe=1" image="diamondAxe.png" soundPrefix="metal" type="metal" achievement="nothing" onComplete="nothing" tooltip="Chops wood."/>
+		<item ingrediens="nothing=0" requiredItem="nothing" craftedItems="diamond hoe=1" image="diamondHoe.png" soundPrefix="metal" type="metal" achievement="nothing" onComplete="nothing" tooltip="Tills soil."/>
+		<item ingrediens="nothing=0" requiredItem="furnace" craftedItems="iron ingot=1" image="ironIngot.png" soundPrefix="metal" type="metal" achievement="Iron ingot smelted !" onComplete="nothing" tooltip="Used to craft iron tools and armor."/>
+		<item ingrediens="nothing=0" requiredItem="furnace" craftedItems="gold ingot=1" image="goldIngot.png" soundPrefix="metal" type="metal" achievement="Gold ingot smelted !" onComplete="nothing" tooltip="Used to craft gold tools and armor."/>
+		<item ingrediens="nothing=0" requiredItem="nothing" craftedItems="city state=1" image="cityState.png" soundPrefix="" type="" achievement="City State !" onComplete="nothing" tooltip="Gud job."/>
+		<item ingrediens="nothing=0" requiredItem="nothing" craftedItems="port=1" image="port.png" soundPrefix="wood" type="wood" achievement="Port established !" onComplete="nothing" tooltip="Required to sail around Grindcraftia."/>
+		<item ingrediens="nothing=0" requiredItem="nothing" craftedItems="portal sleigh=1" image="portalSleigh.png" soundPrefix="metal" type="" achievement="Portal sleigh !" onComplete="nothing" tooltip="Used to travel to the nether."/>
+	</crafters>
+		
+</data>

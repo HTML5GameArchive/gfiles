@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+	<label id="grindLabel">Grind</label>
+	<label id="craftLabel">Craft</label>
+	<label id="invLabel">Inventory</label>
+	<label id="achLabel">Achievements</label>
+	<!--<label id="sInfo">Version 0.9.6.9</label>-->
+	<label id="sInfo">Version 08fbe4c</label>
+	<label id="sSfx">SFX Volume</label>
+	<label id="sMusic">Music Volume</label>
+	<label id="particlesL">Particles</label>
+	<label id="layoutL1">Hide grinds when automated</label>
+	<label id="layoutL2">Merge Inventory</label>
+	<label id="sErrors">Show errors.</label>
+	
+	<label id="map_lbl">Map</label>
+	
+	
+	<alerts>
+		<label id="startL">GrindCraft</label>
+		<label id="pauseL">GrindCraft is paused.</label>
+		<label id="game_win">You beat GrindCraft!{NL}{NL}Map is open.</label>
+		<label id="beat_msg">You beat {LBL} !</label>
+		<label id="check_map">Check the map !{NL}You can go to {LBL}</label>
+		<label id="map_open">Map is open !</label>
+		<label id="tp_build">You built the Trading Post.{NL}Trade emeralds for items.</label>
+		<label id="goto">Go to {LBL}?</label>
+		<label id="purchase">Sign in to Kongregate to purchase items.</label>
+	</alerts>
+	
+	<achieve></achieve>
+	
+	<buttons>
+		<button id="resume">Resume</button>
+		<button id="ok">OK</button>
+		<button id="deleteGame">Delete Game !</button>
+		<button id="play">Play</button>
+		<button id="how">How</button>
+		<button id="next">Next</button>
+		<button id="load">Load</button>
+		<button id="save">Save</button>
+		<button id="go">Go</button>
+		<button id="no">No</button>
+		<button id="settings">Settings</button>
+		<button id="save_game">Save Game</button>
+		<button id="load_game">Load Game</button>
+	</buttons>
+	
+	<messages>
+		<msg>You beat GrindCraft !{NL}{NL}Map is open.</msg>
+		<msg id="save_game_msg">Saving The game...</msg>
+		<msg id="save_game_ok">Saving The game...</msg>
+		<msg id="loaded_game_msg">Load game data...</msg>
+		<msg id="loaded_game_ok">Game successfuly{NL}loaded.</msg>
+	</messages>
+	
+	<tutorial>
+		<item id="tut1">Click here</item>
+		<item id="tut2">You got an Achievement !</item>
+		<item id="tut3">And a piece of wood !{NL}Here it is !</item>
+		<item id="tut4">Turn that wood into planks.{NL}Click this !</item>
+		<item id="tut5">You made planks !</item>
+		<item id="tut6">Here's all the stuff you can make !</item>
+		<item id="tut7">GrindCraft !</item>
+	</tutorial>
+	
+	
+</data>

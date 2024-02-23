@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<data>
+	
+	
+	<grinders>
+		<item name="nether sleigh" generates="netherrack,blaze,ghast,nether wart,zombie pigman" occurance="10,1,1.75,1,3" img="netherSleighGrinder.png" maxIncrease="3"/>
+		<item name="overworld" generates="wood,sand,water" occurance="5,20,20" img="overworld.png"/>
+		<item name="mine" generates="stone,coal ore,iron ore,gold ore,diamond ore,redstone ore,obsidian" occurance="50,14,4,3,1,4,2" img="mine.png" maxIncrease="3"/>
+		<item name="mobs" generates="nothing,zombie,skeleton,witch,zombie villager,spider" occurance="remainder,1.75,1.75,1.75,1.75,1.75" img="mine.png" maxIncrease="3"/>
+	</grinders>
+	
+	<grinds>
+		<item name="netherrack" img="netherrack.png" drops="netherrack=10" dependency="portal sleigh" timeToBreak="0.5624" achievement=""/>
+		<item name="blaze" img="blaze.png" drops="blaze rod=.5" dependency="portal sleigh" timeToBreak="5" achievement=""/>
+		<item name="blaze rod" img="blazeRod.png" drops="" dependency="" timeToBreak="" achievement=""/>
+		<item name="ghast" img="ghast.png" drops="gunpowder=1" dependency="hunter" timeToBreak="4.5" achievement=""/>
+		<item name="gunpowder" img="gunpowder.png" drops="" dependency="" timeToBreak="" achievement=""/>
+		<item name="nether wart" img="netherWart.png" drops="nether wart=1" dependency="portal sleigh" timeToBreak="0.5" achievement=""/>
+		<item name="zombie pigman" img="zombiePigman.png" drops="nothing=0" dependency="hunter" timeToBreak="2.49" achievement=""/>
+		<item name="wood" img="wood.png" drops="wood=1" dependency="woodsman" timeToBreak="0.74" achievement=""/>
+		<item name="sand" img="sand.png" drops="sand=1" dependency="woodsman" timeToBreak="0.1874" achievement=""/>
+		<item name="water" img="water.png" drops="water=1" dependency="woodsman" timeToBreak="0.125" achievement=""/>
+		<item name="stone" img="stone.png" drops="cobblestone=1" dependency="miner" timeToBreak="0.5624" achievement=""/>
+		<item name="cobblestone" img="cobblestone.png" drops="" dependency="" timeToBreak="" achievement=""/>
+		<item name="coal ore" img="coalOre.png" drops="coal=1" dependency="miner" timeToBreak="1.124" achievement=""/>
+		<item name="coal" img="coal.png" drops="" dependency="" timeToBreak="" achievement=""/>
+		<item name="iron ore" img="ironOre.png" drops="iron ore=1" dependency="miner" timeToBreak="1.24" achievement=""/>
+		<item name="gold ore" img="goldOre.png" drops="gold ore=1" dependency="miner" timeToBreak="1.8" achievement=""/>
+		<item name="diamond ore" img="diamondOre.png" drops="diamond=1" dependency="miner" timeToBreak="1.8" achievement=""/>
+		<item name="diamond" img="diamond.png" drops="" dependency="" timeToBreak="" achievement=""/>
+		<item name="redstone ore" img="redstoneOre.png" drops="redstone=4" dependency="miner" timeToBreak="1.125" achievement=""/>
+		<item name="redstone" img="redstone.png" drops="" dependency="" timeToBreak="" achievement=""/>
+		<item name="obsidian" img="obsidian.png" drops="obsidian=1" dependency="miner" timeToBreak="5" achievement=""/>
+		<item name="zombie" img="zombie.png" drops="nothing=0" dependency="hunter" timeToBreak="2.48" achievement=""/>
+		<item name="skeleton" img="skeleton.png" drops="arrow=.5" dependency="hunter" timeToBreak="2.18" achievement=""/>
+		<item name="arrow" img="arrow.png" drops="" dependency="" timeToBreak="" achievement=""/>
+		<item name="witch" img="witch.png" drops="witch=1" dependency="trap" timeToBreak="3" achievement=""/>
+		<item name="zombie villager" img="zombieVillager.png" drops="zombie villager=1" dependency="trap" timeToBreak="1.67" achievement=""/>
+		<item name="spider" img="spider.png" drops="string=.5" dependency="hunter" timeToBreak="1.78" achievement=""/>
+		<item name="string" img="string.png" drops="" dependency="" timeToBreak="" achievement=""/>
+		<item name="slime" img="slime.png" drops="slime ball=.5" dependency="hunter" timeToBreak="0.98" achievement=""/>
+		<item name="slime ball" img="slimeBall.png" drops="" dependency="" timeToBreak="" achievement=""/>
+		<item name="chicken" img="chicken.png" drops="feather=.5" dependency="wood sword,stone sword,hunter,butcher,iron sword,gold sword,diamond sword" timeToBreak="0.4,0.39,0.38,0.37,0.33,0.286,0.26" achievement=""/>
+		<item name="feather" img="feather.png" drops="" dependency="" timeToBreak="" achievement=""/>
+		<item name="cow" img="cow.png" drops="leather=2" dependency="wood sword,stone sword,hunter,butcher,iron sword,gold sword,diamond sword" timeToBreak="1,0.99,0.98,0.97,0.83,0.714,0.638" achievement=""/>
+		<item name="leather" img="leather.png" drops="" dependency="" timeToBreak="" achievement=""/>
+		<item name="pig" img="pig.png" drops="nothing=0" dependency="wood sword,stone sword,hunter,butcher,iron sword,gold sword,diamond sword" timeToBreak="1,0.99,0.98,0.97,0.83,0.714,0.638" achievement=""/>
+		<item name="sheep" img="sheep.png" drops="wool=.5" dependency="wood sword,stone sword,hunter,butcher,iron sword,gold sword,diamond sword" timeToBreak="0.8,0.79,0.78,0.77,0.667,0.57,0.5" achievement=""/>
+		<item name="wool" img="wool.png" drops="" dependency="" timeToBreak="" achievement=""/>
+	</grinds>
+<crafters>
+	<item ingrediens="nothing=0" requiredItem="nothing" craftedItems="hogquartz" image="hogquartz.png" soundPrefix="metal" type="" achievement="Hogquartz built !" onComplete="nothing" tooltip="Trains up advanced crafters."/>
+	<item ingrediens="nothing=0" requiredItem="nothing" craftedItems="gold smith=1" image="goldSmith.png" soundPrefix="hand" type="" achievement="Gold smith trained !" onComplete="nothing" tooltip="Used to make gold items."/>
+	<item ingrediens="gold smith=1" requiredItem="hogquartz" craftedItems="master smith=1" image="masterSmith.png" soundPrefix="hand" type="" achievement="Master smith trained !" onComplete="nothing" tooltip="Used to melt metal items."/>
+	<item ingrediens="gold soldier=1" requiredItem="master smith" craftedItems="gold soldier=0" image="goldSoldier.png" soundPrefix="hand" type="melter" achievement="Gold soldier !" onComplete="drop soldier=1-gold armor=1" tooltip="Removes armor."/>
+	<item ingrediens="nothing=0" requiredItem="nothing" craftedItems="soldier=1" image="soldier.png" soundPrefix="hand" type="" achievement="Soldier up !" onComplete="nothing" tooltip="Used to make obsidian soldiers."/>
+	<item ingrediens="gold armor=1" requiredItem="master smith" craftedItems="gold armor=0" image="goldArmor.png" soundPrefix="metal" type="melter" achievement="Armor disassembled !" onComplete="drop gold helmet=1-gold breastplate=1-gold leggings=1-gold boots=1" tooltip="Disassembles armor."/>
+	<item ingrediens="gold helmet=1" requiredItem="master smith" craftedItems="gold helmet=0" image="goldHelmet.png" soundPrefix="metal" type="melter" achievement="Gold helmet melted !" onComplete="drop gold ingot=5" tooltip="Melts into gold ingots."/>
+	<item ingrediens="gold breastplate=1" requiredItem="master smith" craftedItems="gold breastplate=0" image="goldBreastplate.png" soundPrefix="metal" type="melter" achievement="Breastplate melted !" onComplete="drop gold ingot=8" tooltip="Melts into gold ingots."/>
+	<item ingrediens="gold leggings=1" requiredItem="master smith" craftedItems="gold leggings=0" image="goldLeggings.png" soundPrefix="metal" type="melter" achievement="Gold leggings melted !" onComplete="drop gold ingot=7" tooltip="Melts into gold ingots."/>
+	<item ingrediens="gold boots=1" requiredItem="master smith" craftedItems="gold boots=0" image="goldBoots.png" soundPrefix="metal" type="melter" achievement="Gold boots melted !" onComplete="drop gold ingot=4" tooltip="Melts into gold ingots."/>
+	<item ingrediens="gold knight=1" requiredItem="master smith" craftedItems="gold knight=0" image="goldKnight.png" soundPrefix="metal" type="melter" achievement="nothing" onComplete="drop gold soldier=1-war horse=1" tooltip="Dismounts knight."/>
+	<item ingrediens="war horse=1" requiredItem="master smith" craftedItems="war horse=0" image="warHorse.png" soundPrefix="" type="melter" achievement="nothing" onComplete="drop tamed horse=1-gold block=4" tooltip="Removes armor."/>
+	<item ingrediens="nothing=0" requiredItem="nothing" craftedItems="tamed horse=1" image="tamedHorse.png" soundPrefix="metal" type="" achievement="nothing" onComplete="nothing" tooltip="Used to make obsidian mounts."/>
+	<item ingrediens="gold block=1" requiredItem="master smith" craftedItems="gold block=0" image="goldBlock.png" soundPrefix="metal" type="melter" achievement="nothing" onComplete="drop gold ingot=9" tooltip="Melts into gold ingots."/>
+	<item ingrediens="gold pick=1" requiredItem="master smith" craftedItems="gold pick=0" image="goldPick.png" soundPrefix="metal" type="melter" achievement="Gold tool melted !" onComplete="drop gold ingot=3" tooltip="Melts into gold ingots."/>
+	<item ingrediens="gold shovel=1" requiredItem="master smith" craftedItems="gold shovel=0" image="goldShovel.png" soundPrefix="metal" type="melter" achievement="Gold tool melted !" onComplete="drop gold ingot=1" tooltip="Melts into gold ingots."/>
+	<item ingrediens="gold sword=1" requiredItem="master smith" craftedItems="gold sword=0" image="goldSword.png" soundPrefix="metal" type="melter" achievement="Gold tool melted !" onComplete="drop gold ingot=2" tooltip="Melts into gold ingots."/>
+	<item ingrediens="gold axe=1" requiredItem="master smith" craftedItems="gold axe=0" image="goldAxe.png" soundPrefix="metal" type="melter" achievement="Gold tool melted !" onComplete="drop gold ingot=3" tooltip="Melts into gold ingots."/>
+	<item ingrediens="gold hoe=1" requiredItem="master smith" craftedItems="gold hoe=0" image="goldHoe.png" soundPrefix="metal" type="melter" achievement="Gold tool melted !" onComplete="drop gold ingot=2" tooltip="Melts into gold ingots."/>
+	<item ingrediens="iron ingot=2" requiredItem="nothing" craftedItems="gold ingot=1" image="goldIngot.png" soundPrefix="metal" type="" achievement="nothing" onComplete="nothing" tooltip="Can be transmuted into diamond."/>
+	<item ingrediens="nothing=0" requiredItem="trap" craftedItems="witch=1" image="witch.png" soundPrefix="wood" type="grind" achievement="nothing" onComplete="nothing" tooltip="Turns into wizard."/>
+	<item ingrediens="witch=1" requiredItem="priest" craftedItems="wizard=1" image="wizard.png" soundPrefix="hand" type="villager" achievement="Wizard turned !" onComplete="nothing" tooltip="Required to create flying horses."/>
+	<item ingrediens="wizard=1" requiredItem="hogquartz" craftedItems="apothecary=1" image="apothecary.png" soundPrefix="hand" type="" achievement="Apothecary trained !" onComplete="nothing" tooltip="Used to make potions and explosives."/>
+	<item ingrediens="witch=1" requiredItem="hunter" craftedItems="sugar=1" image="sugar.png" soundPrefix="metal" type="" achievement="Sugar dropped !" onComplete="nothing" tooltip="Required to make potions."/>
+	<item ingrediens="nothing=0" requiredItem="portal sleigh" craftedItems="nether wart=1" image="netherWart.png" soundPrefix="whoosh" type="grind" achievement="Nether wart picked !" onComplete="nothing" tooltip="Used in potions."/>
+	<item ingrediens="sugar=1,nether wart=1" requiredItem="apothecary" craftedItems="speed potion=1" image="potion.png" soundPrefix="whoosh" type="" achievement="Potion concocted !" onComplete="nothing" tooltip="Can be drank."/>
+	<item ingrediens="speed potion=1" requiredItem="nothing" craftedItems="use speed potion=0" image="usePotion.png" soundPrefix="whoosh" type="" achievement="Potion drank !" onComplete="speed 200" tooltip="Has speedy properties."/>
+	<item ingrediens="wizard=1" requiredItem="hogquartz" craftedItems="alchemist=1" image="alchemist.png" soundPrefix="hand" type="" achievement="Alchemist trained !" onComplete="nothing" tooltip="Used to transform metals and crystals."/>
+	<item ingrediens="gold ingot=2" requiredItem="alchemist" craftedItems="diamond=1" image="diamond.png" soundPrefix="metal" type="" achievement="Diamond transmuted !" onComplete="nothing" tooltip="Transmutes gold into diamonds."/>
+	<item ingrediens="flying knight=1" requiredItem="master smith" craftedItems="flying knight=0" image="flyingKnight.png" soundPrefix="hand" type="melter" achievement="nothing" onComplete="drop diamond soldier=1-flying war horse=1" tooltip="Dismounts flying knight."/>
+	<item ingrediens="flying war horse=1" requiredItem="master smith" craftedItems="flying war horse=0" image="flyingWarHorse.png" soundPrefix="" type="melter" achievement="nothing" onComplete="drop tamed flying horse=1-diamond block=4" tooltip="Disassembles armor."/>
+	<item ingrediens="nothing=0" requiredItem="nothing" craftedItems="tamed flying horse=1" image="tamedFlyingHorse.png" soundPrefix="" type="" achievement="nothing" onComplete="nothing" tooltip="Used to make obsidian mounts."/>
+	<item ingrediens="diamond block=1" requiredItem="master smith" craftedItems="diamond block=0" image="diamondBlock.png" soundPrefix="metal" type="melter" achievement="nothing" onComplete="drop diamond=9" tooltip="Breaks into diamonds."/>
+	<item ingrediens="diamond soldier=1" requiredItem="master smith" craftedItems="diamond soldier=0" image="diamondSoldier.png" soundPrefix="hand" type="melter" achievement="Diamond soldier !" onComplete="drop soldier=1-diamond armor=1" tooltip="Removes armor."/>
+	<item ingrediens="diamond armor=1" requiredItem="master smith" craftedItems="diamond armor=0" image="diamondArmor.png" soundPrefix="metal" type="melter" achievement="Armor disassembled !" onComplete="drop diamond helmet=1-diamond breastplate=1-diamond leggings=1-diamond boots=1" tooltip="Disassembles armor."/>
+	<item ingrediens="diamond helmet=1" requiredItem="master smith" craftedItems="diamond helmet=0" image="diamondHelmet.png" soundPrefix="metal" type="melter" achievement="Diamonds extracted !" onComplete="drop diamond=5" tooltip="Strips diamonds."/>
+	<item ingrediens="diamond breastplate=1" requiredItem="master smith" craftedItems="diamond breastplate=0" image="diamondBreastplate.png" soundPrefix="metal" type="melter" achievement="Diamonds extracted !" onComplete="drop diamond=8" tooltip="Strips diamonds."/>
+	<item ingrediens="diamond leggings=1" requiredItem="master smith" craftedItems="diamond leggings=0" image="diamondLeggings.png" soundPrefix="metal" type="melter" achievement="Diamonds extracted !" onComplete="drop diamond=7" tooltip="Strips diamonds."/>
+	<item ingrediens="diamond boots=1" requiredItem="master smith" craftedItems="diamond boots=0" image="diamondBoots.png" soundPrefix="metal" type="melter" achievement="Diamonds extracted !" onComplete="drop diamond=4" tooltip="Strips diamonds."/>
+	<item ingrediens="iron armor=1" requiredItem="master smith" craftedItems="iron armor=0" image="ironArmor.png" soundPrefix="metal" type="melter" achievement="Armor disassembled !" onComplete="drop iron helmet=1-iron breastplate=1-iron leggings=1-iron boots=1" tooltip="Disassembles armor."/>
+	<item ingrediens="iron helmet=1" requiredItem="master smith" craftedItems="iron helmet=0" image="ironHelmet.png" soundPrefix="metal" type="melter" achievement="Iron helmet melted !" onComplete="drop iron ingot=5" tooltip="Melts into iron ingots."/>
+	<item ingrediens="iron breastplate=1" requiredItem="master smith" craftedItems="iron breastplate=0" image="ironBreastplate.png" soundPrefix="metal" type="melter" achievement="Breastplate  melted !" onComplete="drop iron ingot=8" tooltip="Melts into iron ingots."/>
+	<item ingrediens="iron leggings=1" requiredItem="master smith" craftedItems="iron leggings=0" image="ironLeggings.png" soundPrefix="metal" type="melter" achievement="Iron leggings melted !" onComplete="drop iron ingot=7" tooltip="Melts into iron ingots."/>
+	<item ingrediens="iron boots=1" requiredItem="master smith" craftedItems="iron boots=0" image="ironBoots.png" soundPrefix="metal" type="melter" achievement="Iron boots melted !" onComplete="drop iron ingot=4" tooltip="Melts into iron ingots."/>
+	<item ingrediens="iron pick=1" requiredItem="master smith" craftedItems="iron pick=0" image="ironPick.png" soundPrefix="metal" type="melter" achievement="Iron tool melted !" onComplete="drop iron ingot=3" tooltip="Melts into iron ingots."/>
+	<item ingrediens="iron shovel=1" requiredItem="master smith" craftedItems="iron shovel=0" image="ironShovel.png" soundPrefix="metal" type="melter" achievement="Iron tool melted !" onComplete="drop iron ingot=1" tooltip="Melts into iron ingots."/>
+	<item ingrediens="iron sword=1" requiredItem="master smith" craftedItems="iron sword=0" image="ironSword.png" soundPrefix="metal" type="melter" achievement="Iron tool melted !" onComplete="drop iron ingot=2" tooltip="Melts into iron ingots."/>
+	<item ingrediens="iron axe=1" requiredItem="master smith" craftedItems="iron axe=0" image="ironAxe.png" soundPrefix="metal" type="melter" achievement="Iron tool melted !" onComplete="drop iron ingot=3" tooltip="Melts into iron ingots."/>
+	<item ingrediens="iron hoe=1" requiredItem="master smith" craftedItems="iron hoe=0" image="ironHoe.png" soundPrefix="metal" type="melter" achievement="Iron tool melted !" onComplete="drop iron ingot=2" tooltip="Melts into iron ingots."/>
+	<item ingrediens="nothing=0" requiredItem="nothing" craftedItems="iron ingot=1" image="ironIngot.png" soundPrefix="metal" type="" achievement="Gold transmuted !" onComplete="nothing" tooltip="Transmutes iron into gold."/>
+	<item ingrediens="nothing=0" requiredItem="miner" craftedItems="redstone=1" image="redstone.png" soundPrefix="metal" type="grind" achievement="Redstone mined !" onComplete="nothing" tooltip="Used in redstone circuitry and potions."/>
+	<item ingrediens="speed potion=1,redstone=1" requiredItem="apothecary" craftedItems="speed 2 potion=1" image="potion.png" soundPrefix="whoosh" type="" achievement="Potion concocted !" onComplete="nothing" tooltip="Can be drank."/>
+	<item ingrediens="speed 2 potion=1" requiredItem="nothing" craftedItems="use speed 2 potion=0" image="usePotion.png" soundPrefix="whoosh" type="" achievement="Potion drank !" onComplete="speed 400" tooltip="Longer lasting speed."/>
+	<item ingrediens="diamond=2" requiredItem="alchemist" craftedItems="obsidian=1" image="obsidian.png" soundPrefix="metal" type="" achievement="Obsidian transmuted !" onComplete="nothing" tooltip="Used to craft items and armor."/>
+	<item ingrediens="obsidian=5" requiredItem="master smith" craftedItems="obsidian helmet=1" image="obsidianHelmet.png" soundPrefix="metal" type="" achievement="Obsidian helmet !" onComplete="nothing" tooltip="Required to make obsidian armor."/>
+	<item ingrediens="obsidian=8" requiredItem="master smith" craftedItems="obsidian breastplate=1" image="obsidianBreastplate.png" soundPrefix="metal" type="" achievement="Obsidian breastplate !" onComplete="nothing" tooltip="Required to make obsidian armor."/>
+	<item ingrediens="obsidian=7" requiredItem="master smith" craftedItems="obsidian leggings=1" image="obsidianLeggings.png" soundPrefix="metal" type="" achievement="Obsidian leggings !" onComplete="nothing" tooltip="Required to make obsidian armor."/>
+	<item ingrediens="obsidian=4" requiredItem="master smith" craftedItems="obsidian boots=1" image="obsidianBoots.png" soundPrefix="metal" type="" achievement="Obsidian boots !" onComplete="nothing" tooltip="Required to make obsidian armor."/>
+	<item ingrediens="obsidian helmet=1,obsidian breastplate=1,obsidian leggings=1,obsidian boots=1" requiredItem="nothing" craftedItems="obsidian armor=1" image="obsidianArmor.png" soundPrefix="metal" type="" achievement="Obsidian armor !" onComplete="nothing" tooltip="Required to make obsidian soldiers."/>
+	<item ingrediens="obsidian=2,stick=1" requiredItem="master smith" craftedItems="obsidian sword=1" image="obsidianSword.png" soundPrefix="metal" type="" achievement="Obsidian sword !" onComplete="nothing" tooltip="Required to make obsidian soldiers."/>
+	<item ingrediens="wood=1" requiredItem="carpenter" craftedItems="stick=8" image="stick.png" soundPrefix="wood" type="wood" achievement="nothing" onComplete="nothing" tooltip="Used to craft tools and wood items."/>
+	<item ingrediens="nothing=0" requiredItem="hunter" craftedItems="string=1" image="string.png" soundPrefix="whoosh" type="grind" achievement="nothing" onComplete="nothing" tooltip="Used to make bows."/>
+	<item ingrediens="stick=3,string=3" requiredItem="fletcher" craftedItems="bow=1" image="bow.png" soundPrefix="wood" type="" achievement="Bow crafted !" onComplete="nothing" tooltip="Required to make obsidian soldiers."/>
+	<item ingrediens="nothing=0" requiredItem="nothing" craftedItems="arrow=1" image="arrow.png" soundPrefix="whoosh" type="grind" achievement="nothing" onComplete="nothing" tooltip="Required to make obsidian soldiers."/>
+	<item ingrediens="soldier=1,obsidian armor=1,obsidian sword=1,bow=1,arrow=8" requiredItem="nothing" craftedItems="obsidian soldier=1" image="obsidianSoldier.png" soundPrefix="hand" type="villager" achievement="Obsidian soldier !" onComplete="nothing" tooltip="Required to train obsidian knights."/>
+	<item ingrediens="nothing=0" requiredItem="nothing" craftedItems="ton of apples=1" image="tonOfApples.png" soundPrefix="hand" type="" achievement="That&#039;s a ton !" onComplete="nothing" tooltip="Can be made into bushels."/>
+	<item ingrediens="ton of apples=1" requiredItem="nothing" craftedItems="bushel=12" image="bushel.png" soundPrefix="metal" type="melter" achievement="Apples busheled." onComplete="nothing" tooltip="Separates into golden apples."/>
+	<item ingrediens="bushel=1" requiredItem="nothing" craftedItems="golden apple=8" image="goldenApple.png" soundPrefix="metal" type="melter" achievement="nothing" onComplete="nothing" tooltip="Removes gold from apples."/>
+	<item ingrediens="golden apple=1" requiredItem="alchemist" craftedItems="apple=1" image="apple.png" soundPrefix="metal" type="" achievement="Apple transmuted !" onComplete="drop gold ingot=9" tooltip="Required to make enchanted apple."/>
+	<item ingrediens="gold ingot=9" requiredItem="nothing" craftedItems="gold block=1" image="goldBlock.png" soundPrefix="metal" type="" achievement="Gold block crafted !" onComplete="nothing" tooltip="Required to make enchanted apple."/>
+	<item ingrediens="gold block=9,apple=1" requiredItem="alchemist" craftedItems="enchanted apple=1" image="enchantedApple.png" soundPrefix="metal" type="" achievement="Enchanted apple !" onComplete="nothing" tooltip="Required to make obsidian soldiers."/>
+	<item ingrediens="tamed horse=1,obsidian=9,enchanted apple=1" requiredItem="master smith" craftedItems="obsidian war horse=1" image="obsidianWarHorse.png" soundPrefix="" type="" achievement="Obsidian war horse !" onComplete="nothing" tooltip="Required to train obsidian knights."/>
+	<item ingrediens="obsidian soldier=1,obsidian war horse=1" requiredItem="nothing" craftedItems="obsidian knight=1" image="obsidianKnight.png" soundPrefix="hand" type="villager" achievement="Obsidian knight !" onComplete="nothing" tooltip="Required to build an obsidian army."/>
+	<item ingrediens="tamed flying horse=1,obsidian=9,enchanted apple=1" requiredItem="master smith" craftedItems="obsidian flying horse=1" image="obsidianFlyingHorse.png" soundPrefix="" type="" achievement="Obsidian flying horse !" onComplete="nothing" tooltip="Required to train obsidian flying knights."/>
+	<item ingrediens="obsidian soldier=1,obsidian flying horse=1" requiredItem="nothing" craftedItems="obsidian flying knight=1" image="obsidianFlyingKnight.png" soundPrefix="hand" type="villager" achievement="Obsidian flying knight !" onComplete="nothing" tooltip="Required to build an obsidian army."/>
+	<item ingrediens="obsidian soldier=12,obsidian knight=4,obsidian flying knight=4" requiredItem="nothing" craftedItems="obsidian army=1" image="obsidianArmy.png" soundPrefix="metal" type="" achievement="Obsidian army!" onComplete="nothing" tooltip="Required to build an armada."/>
+	<item ingrediens="nothing=0" requiredItem="trap" craftedItems="zombie villager=1" image="zombieVillager.png" soundPrefix="wood" type="grind" achievement="nothing" onComplete="nothing" tooltip="Turns into villager."/>
+	<item ingrediens="zombie villager=1" requiredItem="priest" craftedItems="villager=1" image="villager.png" soundPrefix="hand" type="villager" achievement="Zombie villager turned !" onComplete="nothing" tooltip="Can specialize."/>
+	<item ingrediens="villager=1" requiredItem="sergeant" craftedItems="soldier=1" image="soldier.png" soundPrefix="hand" type="villager" achievement="Soldier up !" onComplete="nothing" tooltip="Used to make obsidian soldiers."/>
+	<item ingrediens="wizard=1" requiredItem="hogquartz" craftedItems="redstone wizard=1" image="redstoneWizard.png" soundPrefix="hand" type="" achievement="Redstone wizard !" onComplete="nothing" tooltip="Makes redstone items."/>
+	<item ingrediens="cobblestone=7,bow=1,redstone=1" requiredItem="redstone wizard" craftedItems="dispenser=1" image="dispenser.png" soundPrefix="metal" type="" achievement="Dispenser crafted !" onComplete="nothing" tooltip="Used to make cannons."/>
+	<item ingrediens="wood=1" requiredItem="carpenter" craftedItems="wood slab=6" image="woodSlab.png" soundPrefix="wood" type="" achievement="nothing" onComplete="nothing" tooltip="Used to make stuff out of wood."/>
+	<item ingrediens="wood slab=5" requiredItem="carpenter" craftedItems="cannon platform=1" image="cannonPlatform.png" soundPrefix="wood" type="" achievement="Cannon platform !" onComplete="nothing" tooltip="Used to make cannons."/>
+	<item ingrediens="dispenser=3,water=1" requiredItem="nothing" craftedItems="cannon chamber=1" image="cannonChamber.png" soundPrefix="metal" type="" achievement="Cannon chamber !" onComplete="nothing" tooltip="Used to make cannons."/>
+	<item ingrediens="cobblestone=1,coal=1" requiredItem="furnace" craftedItems="stone=1" image="stone.png" soundPrefix="metal" type="" achievement="Stone kilned !" onComplete="nothing" tooltip="Used to make buttons."/>
+	<item ingrediens="stone=1" requiredItem="mason" craftedItems="button=1" image="button.png" soundPrefix="metal" type="" achievement="Button crafted !" onComplete="nothing" tooltip="Used to make redstone items."/>
+	<item ingrediens="stick=1,redstone=1" requiredItem="redstone wizard" craftedItems="redstone torch=1" image="redstoneTorch.png" soundPrefix="wood" type="" achievement="Redstone torch !" onComplete="nothing" tooltip="Used to make repeaters."/>
+	<item ingrediens="redstone torch=1,button=1,redstone=2" requiredItem="redstone wizard" craftedItems="cannon trigger=1" image="cannonTrigger.png" soundPrefix="wood" type="" achievement="Cannon trigger !" onComplete="nothing" tooltip="Used to make cannons."/>
+	<item ingrediens="nothing=0" requiredItem="miner" craftedItems="gunpowder=1" image="gunpowder.png" soundPrefix="dirt" type="grind" achievement="Gunpowder !" onComplete="nothing" tooltip="Used in explosives"/>
+	<item ingrediens="nothing=0" requiredItem="nothing" craftedItems="sand=1" image="sand.png" soundPrefix="dirt" type="grind" achievement="Sand dug !" onComplete="nothing" tooltip="Used to make tnt."/>
+	<item ingrediens="gunpowder=5,sand=4" requiredItem="apothecary" craftedItems="tnt=1" image="tnt.png" soundPrefix="dirt" type="" achievement="TNT crafted !" onComplete="nothing" tooltip="Used to make cannons."/>
+	<item ingrediens="cannon platform=1,cannon chamber=1,cannon trigger=1,tnt=64" requiredItem="redstone wizard" craftedItems="cannon=1" image="cannon.png" soundPrefix="metal" type="" achievement="Cannon built !" onComplete="nothing" tooltip="Used to make gunships."/>
+	<item ingrediens="nothing=0" requiredItem="nothing" craftedItems="ship=1" image="ship.png" soundPrefix="" type="" achievement="Ship !" onComplete="nothing" tooltip="Used to sail around Grindcraftia."/>
+	<item ingrediens="ship=1,cannon=2" requiredItem="nothing" craftedItems="gunship=1" image="gunship.png" soundPrefix="metal" type="" achievement="Gunship built !" onComplete="nothing" tooltip="Required to build an armada."/>
+	<item ingrediens="obsidian army=1,gunship=3" requiredItem="nothing" craftedItems="armada=1" image="armada.png" soundPrefix="metal" type="" achievement="Armada made !" onComplete="markMap Strongs Isle-207-1041,beatLocation" tooltip="Required to go to Strongs Isle."/>
+	<item ingrediens="nothing=0" requiredItem="armada" craftedItems="armada exporter=1" image="armada.png" soundPrefix="" type="" achievement="nothing" onComplete="navigateToUrl 1JcZeg" tooltip="Download."/>
+	<item ingrediens="nothing=0" requiredItem="miner" craftedItems="cobblestone=1" image="cobblestone.png" soundPrefix="metal" type="grind" achievement="nothing" onComplete="nothing" tooltip="Used to make buildings."/>
+	<item ingrediens="cobblestone=8" requiredItem="mason" craftedItems="furnace=1" image="furnace.png" soundPrefix="" type="" achievement="Furnace crafted !" onComplete="nothing" tooltip="Required to smelt iron and gold."/>
+	<item ingrediens="nothing=0" requiredItem="miner" craftedItems="coal=1" image="coal.png" soundPrefix="metal" type="grind" achievement="nothing" onComplete="nothing" tooltip="Used to smelt ingots."/>
+	<item ingrediens="cobblestone=1,coal=1" requiredItem="furnace" craftedItems="stone=1" image="stone.png" soundPrefix="metal" type="" achievement="Stone kilned !" onComplete="nothing" tooltip="Used to make buttons."/>
+	<item ingrediens="nothing=0" requiredItem="miner" craftedItems="gold ore=1" image="goldOre.png" soundPrefix="metal" type="grind" achievement="nothing" onComplete="nothing" tooltip="Used to smelt gold ingots."/>
+	<item ingrediens="coal=1,gold ore=1" requiredItem="furnace" craftedItems="gold ingot=1" image="goldIngot.png" soundPrefix="metal" type="metal" achievement="Gold ingot smelted !" onComplete="nothing" tooltip="Used to craft gold tools and armor."/>
+	<item ingrediens="nothing=0" requiredItem="nothing" craftedItems="woodsman=1" image="woodsman.png" soundPrefix="hand" type="" achievement="nothing" onComplete="nothing" tooltip="Get&#039;s stuff from the overworld."/>
+	<item ingrediens="nothing=0" requiredItem="nothing" craftedItems="carpenter=1" image="carpenter.png" soundPrefix="hand" type="" achievement="nothing" onComplete="nothing" tooltip="Makes stuff out of wood."/>
+	<item ingrediens="nothing=0" requiredItem="nothing" craftedItems="miner=1" image="miner.png" soundPrefix="hand" type="" achievement="nothing" onComplete="nothing" tooltip="Mines mines."/>
+	<item ingrediens="nothing=0" requiredItem="nothing" craftedItems="mason=1" image="mason.png" soundPrefix="hand" type="" achievement="nothing" onComplete="nothing" tooltip="Can build advanced structures"/>
+	<item ingrediens="nothing=0" requiredItem="nothing" craftedItems="hunter=1" image="hunter.png" soundPrefix="hand" type="" achievement="nothing" onComplete="nothing" tooltip="Hunts mobs."/>
+	<item ingrediens="nothing=0" requiredItem="nothing" craftedItems="priest=1" image="priest.png" soundPrefix="hand" type="" achievement="Priest trained !" onComplete="nothing" tooltip="Turns witches into wizards."/>
+	<item ingrediens="nothing=0" requiredItem="nothing" craftedItems="sergeant=1" image="sergeant.png" soundPrefix="hand" type="" achievement="Sergeant hired !" onComplete="nothing" tooltip="Turns villagers into soldiers."/>
+	<item ingrediens="nothing=0" requiredItem="nothing" craftedItems="fletcher=1" image="fletcher.png" soundPrefix="hand" type="" achievement="Fletcher trained !" onComplete="nothing" tooltip="Crafts bows and arrows."/>
+	<item ingrediens="nothing=0" requiredItem="woodsman" craftedItems="wood=1" image="wood.png" soundPrefix="wood" type="grind" achievement="nothing" onComplete="nothing" tooltip="Used to craft stuff out of wood."/>
+	<item ingrediens="nothing=0" requiredItem="nothing" craftedItems="trap=1" image="trap.png" soundPrefix="wood" type="" achievement="Trap built !" onComplete="nothing" tooltip="Required to catch witch."/>
+	<item ingrediens="nothing=0" requiredItem="miner" craftedItems="iron ore=1" image="ironOre.png" soundPrefix="metal" type="grind" achievement="nothing" onComplete="nothing" tooltip="Used to smelt iron ingots."/>
+	<item ingrediens="coal=1,iron ore=1" requiredItem="furnace" craftedItems="iron ingot=1" image="ironIngot.png" soundPrefix="metal" type="metal" achievement="Iron ingot smelted !" onComplete="nothing" tooltip="Used to craft iron tools and armor."/>
+	<item ingrediens="nothing=0" requiredItem="bucket" craftedItems="water=1" image="water.png" soundPrefix="wood" type="grind" achievement="nothing" onComplete="nothing" tooltip="Used to make gardens."/>
+	<item ingrediens="nothing=0" requiredItem="nothing" craftedItems="city state=1" image="cityState.png" soundPrefix="" type="" achievement="City State !" onComplete="nothing" tooltip="Gud job."/>
+	<item ingrediens="nothing=0" requiredItem="nothing" craftedItems="port=1" image="port.png" soundPrefix="wood" type="wood" achievement="Port established !" onComplete="nothing" tooltip="Required to sail around Grindcraftia."/>
+	<item ingrediens="nothing=0" requiredItem="nothing" craftedItems="portal sleigh=1" image="portalSleigh.png" soundPrefix="metal" type="" achievement="Portal sleigh !" onComplete="nothing" tooltip="Used to travel to the nether."/>
+</crafters>
+</data>

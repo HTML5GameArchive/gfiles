@@ -1,0 +1,12 @@
+{
+"companyName": "Moto Road Rash 3D",
+"productName": "Moto Road Rash 3D",
+"dataUrl": "MotoRoadRash3D-2.data.unityweb",
+"wasmCodeUrl": "MotoRoadRash3D-2.wasm.code.unityweb",
+"wasmFrameworkUrl": "MotoRoadRash3D-2.wasm.framework.unityweb",
+"TOTAL_MEMORY": 268435456,
+"graphicsAPI": ["WebGL 2.0", "WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20"
+}

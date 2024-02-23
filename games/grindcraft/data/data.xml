@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<assets>
+ <scene name="MainScene_">
+    <asset boxName="" y="0" name="bcg" type="MovieClip" height="100" regPoint="topleft" index="0" position="absolute" width="100" x="0"/>
+    <asset value="Grind&#xD;" boxName="" name="grindLabel" fontSize="25" textColor="ffffff" index="1" width="13.82" x="1.22" align="center" height="6.7" y="-0.9" regPoint="center" type="TextField" font="Minecraftia Regular" position="absolute"/>
+    <asset value="Craft&#xD;" boxName="" name="craftLabel" fontSize="25" textColor="ffffff" index="2" width="13.82" x="29.66" align="center" height="6.7" y="-1.02" regPoint="center" type="TextField" font="Minecraftia Regular" position="absolute"/>
+    <asset value="Inventory&#xD;" boxName="" name="inventoryLabel" fontSize="25" textColor="ffffff" index="3" width="27.84" x="63.78" align="left" height="6.7" y="-1.02" regPoint="center" type="TextField" font="Minecraftia Regular" position="absolute"/>
+    <asset boxName="" y="5.24" name="craftBox" type="MovieClip" height="94.02" regPoint="topleft" index="4" position="absolute" width="64.5" x="30.66"/>
+    <asset boxName="" y="0.81" name="settingsBtt" type="MovieClip" height="3.88" regPoint="topleft" index="6" position="absolute" width="3" x="89.75"/>
+    <asset boxName="" y="0.81" name="fullScrnBtt" type="MovieClip" height="3.88" regPoint="topleft" index="7" position="absolute" width="3" x="93.75"/>
+    <asset boxName="" y="0.81" name="pauseBtt" type="MovieClip" height="3.88" regPoint="topleft" index="8" position="absolute" width="3" x="85.75"/>
+    <asset boxName="" y="62.26" name="achPanel_box" type="MovieClip" height="13.73" regPoint="topleft" index="9" position="absolute" width="28.75" x="1.22"/>
+    <asset value="Achievements&#xD;" boxName="achPanel_box" name="achieveLabel" fontSize="25" textColor="e0d225" index="0" width="100" x="0" align="center" height="49.05" y="0" regPoint="center" type="TextField" font="Minecraftia Regular" position="relative"/>
+    <asset boxName="achPanel_box" y="46.81" name="achBtt" type="GameItem" height="53.19" regPoint="topleft" index="1" position="relative" width="88.68" x="4.89"/>
+    <asset boxName="" y="47.65" name="map_box" type="MovieClip" height="35.86" regPoint="topleft" index="10" position="absolute" width="27.13" x="2.23"/>
+    <asset boxName="map_box" y="1.22" name="mapBtt1" type="MovieClip" height="10.81" regPoint="topleft" index="1" position="relative" width="11.06" x="50.41"/>
+    <asset boxName="map_box" y="1.22" name="mapBtt2" type="MovieClip" height="10.81" regPoint="topleft" index="2" position="relative" width="11.06" x="62.03"/>
+    <asset boxName="map_box" y="1.22" name="mapBtt3" type="MovieClip" height="10.81" regPoint="topleft" index="3" position="relative" width="11.06" x="73.64"/>
+    <asset boxName="map_box" y="1.22" name="mapBtt4" type="MovieClip" height="10.81" regPoint="topleft" index="4" position="relative" width="11.06" x="86.54"/>
+    <asset value="MAP&#xD;" boxName="map_box" name="mapTxt" fontSize="16" textColor="0" index="5" width="35.48" x="1.54" align="center" height="12.61" y="1.04" regPoint="center" type="TextField" font="Minecraftia Regular" position="relative"/>
+    <asset boxName="" y="73.02" name="mapMarker" type="MovieClip" height="4.85" regPoint="topleft" index="11" position="absolute" width="6.38" x="31.88"/>
+    <asset boxName="" y="46.85" name="itemHandle" type="MovieClip" height="9.37" regPoint="topleft" index="12" position="absolute" width="7.25" x="-10.85"/>
+    <asset boxName="" y="32.96" name="bigBlackBtt" type="MovieClip" height="11.63" regPoint="topleft" index="13" position="absolute" width="9" x="-11.8"/>
+    <asset boxName="" y="25.04" name="smallBtt" type="MovieClip" height="3.88" regPoint="topleft" index="14" position="absolute" width="3" x="-9.32"/>
+    <asset boxName="" y="6.11" name="boxStart" type="MovieClip" height="9.37" regPoint="topleft" index="15" position="absolute" width="7.25" x="31.37"/>
+    <asset boxName="" y="4.98" name="mainBigBtt_box" type="MovieClip" height="14.38" regPoint="topleft" index="16" position="absolute" width="28" x="2.23"/>
+    <asset boxName="mainBigBtt_box" y="0" name="bigBttBcg" type="MovieClip" height="100.45" regPoint="topleft" index="0" position="relative" width="100.38" x="0"/>
+    <asset boxName="mainBigBtt_box" y="8.69" name="bigBttBlack" type="MovieClip" height="81.26" regPoint="topleft" index="1" position="relative" width="32.27" x="60.63"/>
+    <asset boxName="mainBigBtt_box" y="3.56" name="bigBttImg" type="MovieClip" height="90.29" regPoint="topleft" index="2" position="relative" width="64.53" x="0.99"/>
+    <asset boxName="mainBigBtt_box" y="27.09" name="grindIcon" type="MovieClip" height="54.18" regPoint="topleft" index="3" position="relative" width="21.51" x="33.16"/>
+    <asset value="mine&#xD;" boxName="mainBigBtt_box" name="bigBttTxt" fontSize="12" textColor="ffffff" index="4" width="43.92" x="9.01" align="center" height="25.17" y="8.69" regPoint="center" type="TextField" font="Minecraftia Regular" position="relative"/>
+    <asset boxName="mainBigBtt_box" y="73.36" name="grindLoader" type="MovieClip" height="6.77" regPoint="topleft" index="5" position="relative" width="26.89" x="63.39"/>
+    <asset boxName="" y="61.87" name="bigBlack_box" type="MovieClip" height="11.63" regPoint="topleft" index="17" position="absolute" width="9" x="-11.8"/>
+    <asset boxName="bigBlack_box" y="16.67" name="grindBttIcon" type="MovieClip" height="66.67" regPoint="topleft" index="1" position="relative" width="66.67" x="16.67"/>
+    <asset value="obsidian&#xD;" boxName="bigBlack_box" name="bigBlackTxt" fontSize="12" textColor="ffffff" index="2" width="95" x="2.29" align="center" height="30.56" y="5" regPoint="center" type="TextField" font="Minecraftia Regular" position="relative"/>
+    <asset boxName="" y="0.81" name="pauseBtt" type="MovieClip" height="3.88" regPoint="topleft" index="18" position="absolute" width="3" x="85.75"/>
+    <asset boxName="" y="77.22" name="itemHandle_box" type="MovieClip" height="9.37" regPoint="topleft" index="19" position="absolute" width="7.25" x="-10"/>
+    <asset boxName="itemHandle_box" y="8.62" name="itemHandleIcon" type="MovieClip" height="82.76" regPoint="topleft" index="1" position="relative" width="82.76" x="8.62"/>
+    <asset value="20000&#xD;" boxName="itemHandle_box" name="itemHandleTxt" fontSize="10" textColor="ffffff" index="2" width="81.64" x="16.47" align="center" height="32.76" y="66.29" regPoint="center" type="TextField" font="Minecraftia Regular" position="relative"/>
+    <asset boxName="" y="6.11" name="boxStart1" type="MovieClip" height="9.37" regPoint="topleft" index="20" position="absolute" width="7.25" x="39.36"/>
+    <asset boxName="" y="13.14" name="panelBtt" type="MovieClip" height="3.39" regPoint="topleft" index="21" position="absolute" width="8.75" x="-11.1"/>
+    <asset boxName="" y="18.41" name="panelBtt_box" type="MovieClip" height="4.2" regPoint="topleft" index="22" position="absolute" width="8.75" x="-10.85"/>
+    <asset value="resume&#xD;" boxName="panelBtt_box" name="panelBttTxt" fontSize="12" textColor="0" index="1" width="85.21" x="7.36" align="center" height="87.48" y="0" regPoint="center" type="TextField" font="Minecraftia Regular" position="relative"/>
+    <asset value="delete game&#xD;" boxName="" name="panelBttTxt1" fontSize="14" textColor="0" index="23" width="18.78" x="0.26" align="center" height="4.04" y="23.68" regPoint="center" type="TextField" font="Minecraftia Regular" position="absolute"/>
+    <asset boxName="" y="88.38" name="achBtt1_box" type="GameItem" height="7.27" regPoint="topleft" index="24" position="absolute" width="25.5" x="-25.24"/>
+    <asset boxName="achBtt1_box" y="0" name="achBttSkin" type="MovieClip" height="100" regPoint="topleft" index="0" position="relative" width="100" x="0"/>
+    <asset value="Wooden tool&#xD;crafted&#xD;" boxName="achBtt1_box" name="achBttTxt" fontSize="12" textColor="e0d224" index="1" width="59.07" x="27.11" align="center" height="93.33" y="2.33" regPoint="topleft" type="TextField" font="Minecraftia Regular" position="relative"/>
+    <asset boxName="achBtt1_box" y="49" name="achBttIcon" type="MovieClip" height="53.33" regPoint="center" index="2" position="relative" width="11.76" x="17.18"/>
+    <asset value="40,00&#xD;" boxName="" name="popupTxt" fontSize="12" textColor="ffffff" index="25" width="5.74" x="-10" align="center" height="3.55" y="57.04" regPoint="center" type="TextField" font="Minecraftia Regular" position="absolute"/>
+    <asset boxName="" y="6.58" name="tabBttSkin" type="MovieClip" height="4.2" regPoint="topleft" index="26" position="absolute" width="6" x="-9.8"/>
+    <asset boxName="" y="0.78" name="tabBtt" type="MovieClip" height="4.2" regPoint="topleft" index="27" position="absolute" width="6" x="-9.97"/>
+    <asset boxName="" y="39.1" name="samplePanel_box" type="MovieClip" height="20.19" regPoint="topleft" index="28" position="absolute" width="24.75" x="51.13"/>
+    <asset boxName="samplePanel_box" y="0" name="panelBcg" type="MovieClip" height="97.91" regPoint="topleft" index="0" position="relative" width="100" x="0"/>
+    <asset boxName="samplePanel_box" y="18.66" name="panelHandle" type="MovieClip" height="46.55" regPoint="topleft" index="1" position="relative" width="29.29" x="2.63"/>
+    <asset value="flying horse&#xD;" boxName="samplePanel_box" name="panelTxt1" fontSize="12" textColor="ffffff" index="2" width="78.38" x="2.32" align="left" height="17.66" y="0" regPoint="topleft" type="TextField" font="Minecraftia Regular" position="relative"/>
+    <asset value="Used to make hay bales.&#xD;" boxName="samplePanel_box" name="panelTxt2" fontSize="12" textColor="ffffff" index="3" width="95.33" x="2.32" align="left" height="33.71" y="66.29" regPoint="topleft" type="TextField" font="Minecraftia Regular" position="relative"/>
+    <asset boxName="" y="39.42" name="samplePanel1_box" type="MovieClip" height="36.51" regPoint="topleft" index="29" position="absolute" width="12.75" x="16.91"/>
+    <asset boxName="samplePanel1_box" y="0" name="panelBcg1" type="MovieClip" height="100" regPoint="topleft" index="0" position="relative" width="100" x="0"/>
+    <asset boxName="samplePanel1_box" y="1.7" name="panelHandle2" type="MovieClip" height="11.95" regPoint="topleft" index="1" position="relative" width="28.43" x="2.25"/>
+    <asset boxName="samplePanel1_box" y="1.7" name="panelHandle1" type="MovieClip" height="11.95" regPoint="topleft" index="2" position="relative" width="28.43" x="69.17"/>
+    <asset boxName="samplePanel1_box" y="2.65" name="panelArrow" type="MovieClip" height="10.18" regPoint="topleft" index="3" position="relative" width="32.35" x="33.33"/>
+    <asset boxName="" y="50" name="beatPanel_box" type="MovieClip" height="33.44" regPoint="center" index="30" position="absolute" width="37.38" x="50"/>
+    <asset value="test&#xD;" boxName="beatPanel_box" name="beatInfoTxt" fontSize="12" textColor="4600e4" index="1" width="83.55" x="-41.77" align="center" height="39.25" y="-21.09" regPoint="center" type="TextField" font="Minecraftia Regular" position="relative"/>
+    <asset boxName="beatPanel_box" y="25.12" name="beatOkBtt" type="MovieClip" height="10.14" regPoint="topleft" index="2" position="relative" width="23.41" x="-11.71"/>
+    <asset boxName="beatPanel_box" y="25.12" name="beatBtt1" type="MovieClip" height="10.14" regPoint="topleft" index="3" position="relative" width="23.41" x="-28.43"/>
+    <asset boxName="beatPanel_box" y="25.12" name="beatBtt2" type="MovieClip" height="10.14" regPoint="topleft" index="4" position="relative" width="23.41" x="5.02"/>
+    <asset boxName="" y="42.33" name="tutorPanel_box" type="GameItem" height="24.56" regPoint="topleft" index="31" position="absolute" width="25.25" x="36.63"/>
+    <asset value="test&#xD;" boxName="tutorPanel_box" name="tutorTxt" fontSize="12" textColor="0" index="1" width="86.63" x="6.68" align="center" height="14.47" y="42.76" regPoint="center" type="TextField" font="Minecraftia Regular" position="relative"/>
+    <asset boxName="tutorPanel_box" y="77.6" name="tutorBtt" type="MovieClip" height="13.82" regPoint="topleft" index="2" position="relative" width="34.65" x="56.19"/>
+    <asset boxName="" y="50" name="mainPanel_box" type="MovieClip" height="24.39" regPoint="center" index="32" position="absolute" width="25.25" x="50"/>
+    <asset boxName="mainPanel_box" y="-50" name="mainPanelSkin" type="MovieClip" height="100" regPoint="topleft" index="0" position="relative" width="100" x="-50"/>
+    <asset value="test&#xD;" boxName="mainPanel_box" name="mainPanelTxt" fontSize="12" textColor="ffffff" index="1" width="86.63" x="-43.32" align="center" height="24.34" y="-12.19" regPoint="center" type="TextField" font="Minecraftia Regular" position="relative"/>
+    <asset boxName="mainPanel_box" y="26.16" name="panelBtt1" type="MovieClip" height="13.91" regPoint="topleft" index="2" position="relative" width="34.65" x="-42.08"/>
+    <asset boxName="mainPanel_box" y="26.16" name="panelBtt2" type="MovieClip" height="13.91" regPoint="topleft" index="3" position="relative" width="34.65" x="7.43"/>
+    <asset boxName="mainPanel_box" y="26.16" name="panelBtt3" type="MovieClip" height="13.91" regPoint="topleft" index="4" position="relative" width="34.65" x="-17.33"/>
+    <asset boxName="" y="50" name="settingsPanel_box" type="MovieClip" height="33.44" regPoint="center" index="33" position="absolute" width="37.38" x="50.06"/>
+    <asset boxName="settingsPanel_box" y="-50" name="settingsPanelBcg" type="MovieClip" height="100" regPoint="topleft" index="0" position="relative" width="100" x="-50"/>
+    <asset boxName="settingsPanel_box" y="-47.63" name="tab1" type="MovieClip" height="12.56" regPoint="topleft" index="1" position="relative" width="16.05" x="-48.46"/>
+    <asset boxName="settingsPanel_box" y="-47.63" name="tab2" type="MovieClip" height="12.56" regPoint="topleft" index="2" position="relative" width="16.05" x="-32.41"/>
+    <asset boxName="settingsPanel_box" y="-47.63" name="tab3" type="MovieClip" height="12.56" regPoint="topleft" index="3" position="relative" width="16.05" x="-16.35"/>
+    <asset boxName="settingsPanel_box" y="-47.63" name="tab4" type="MovieClip" height="12.56" regPoint="topleft" index="4" position="relative" width="16.05" x="-0.3"/>
+    <asset boxName="settingsPanel_box" y="-47.63" name="tab5" type="MovieClip" height="12.56" regPoint="topleft" index="5" position="relative" width="16.05" x="15.75"/>
+    <asset boxName="settingsPanel_box" y="-47.63" name="tab6" type="MovieClip" height="12.56" regPoint="topleft" index="6" position="relative" width="16.05" x="31.81"/>
+    <asset boxName="settingsPanel_box" y="27.87" name="settOKBtt" type="MovieClip" height="10.14" regPoint="topleft" index="7" position="relative" width="23.41" x="-11.71"/>
+    <asset value="test&#xD;" boxName="settingsPanel_box" name="infoSettTxt" fontSize="12" textColor="4600e4" index="8" width="83.55" x="-41.77" align="center" height="39.25" y="-21.09" regPoint="center" type="TextField" font="Minecraftia Regular" position="relative"/>
+    <asset value="SFX Volume&#xD;" boxName="settingsPanel_box" name="settTxt1" fontSize="12" textColor="4600e4" index="9" width="42.41" x="-43.63" align="left" height="10.92" y="-14.95" regPoint="center" type="TextField" font="Minecraftia Regular" position="relative"/>
+    <asset value="Music Volume&#xD;" boxName="settingsPanel_box" name="settTxt2" fontSize="12" textColor="4600e4" index="10" width="42.41" x="-43.63" align="left" height="10.92" y="1.71" regPoint="center" type="TextField" font="Minecraftia Regular" position="relative"/>
+    <asset boxName="settingsPanel_box" y="-10.7" name="settSlider1" type="MovieClip" height="4.83" regPoint="topleft" index="11" position="relative" width="53.51" x="-8.8"/>
+    <asset value="SFX Volume&#xD;" boxName="settingsPanel_box" name="settTxt3" fontSize="12" textColor="4600e4" index="12" width="42.41" x="-43.63" align="left" height="10.92" y="-7.71" regPoint="center" type="TextField" font="Minecraftia Regular" position="relative"/>
+    <asset boxName="settingsPanel_box" y="-3.45" name="settSlider2" type="MovieClip" height="4.83" regPoint="topleft" index="13" position="relative" width="53.51" x="-8.8"/>
+    <asset value="SFX Volume&#xD;" boxName="settingsPanel_box" name="settTxt4" fontSize="12" textColor="4600e4" index="14" width="42.41" x="-30.4" align="left" height="10.92" y="-12.66" regPoint="center" type="TextField" font="Minecraftia Regular" position="relative"/>
+    <asset boxName="settingsPanel_box" y="-11.45" name="cBox1" type="MovieClip" height="9.66" regPoint="topleft" index="15" position="relative" width="6.69" x="-39.85"/>
+    <asset boxName="settingsPanel_box" y="3.04" name="cBox2" type="MovieClip" height="9.66" regPoint="topleft" index="16" position="relative" width="6.69" x="-39.85"/>
+    <asset value="SFX Volume&#xD;" boxName="settingsPanel_box" name="settTxt5" fontSize="12" textColor="4600e4" index="17" width="42.41" x="-30.4" align="left" height="10.92" y="1.84" regPoint="center" type="TextField" font="Minecraftia Regular" position="relative"/>
+    <asset boxName="settingsPanel_box" y="-5.07" name="deleteGameBtt" type="MovieClip" height="10.14" regPoint="topleft" index="18" position="relative" width="23.41" x="-11.71"/>
+    <asset boxName="settingsPanel_box" y="-12.92" name="updateGame" type="MovieClip" height="10.14" regPoint="topleft" index="19" position="relative" width="23.41" x="-11.71"/>
+    <asset boxName="settingsPanel_box" y="2.78" name="saveGame" type="MovieClip" height="10.14" regPoint="topleft" index="20" position="relative" width="23.41" x="-11.71"/>
+  </scene>
+<scene name="Debug">
+    <asset type="MovieClip" height="70.27" y="27.07" name="dbgPanel_box" boxName="" regPoint="topleft" index="0" position="absolute" width="80.5" x="18.44"/>
+    <asset type="MovieClip" height="4.83" y="33.39" name="loadBtt" boxName="dbgPanel_box" regPoint="topleft" index="1" position="relative" width="10.88" x="44.48"/>
+    <asset type="MovieClip" height="4.83" y="47.76" name="saveBtt" boxName="dbgPanel_box" regPoint="topleft" index="2" position="relative" width="10.88" x="44.48"/>
+    <asset type="MovieClip" height="4.83" y="61.55" name="dbgOKBtt" boxName="dbgPanel_box" regPoint="topleft" index="3" position="relative" width="10.88" x="44.48"/>
+    <asset value="DEBUG PANEL&#xD;" name="debugInfo" fontSize="18" boxName="dbgPanel_box" textColor="ffffff" index="4" width="50.7" x="23.62" align="center" height="23.57" regPoint="center" font="Arial" type="TextField" y="23.68" position="relative"/>
+    <asset type="MovieClip" height="4.83" y="51.22" name="dbgSetBtt" boxName="dbgPanel_box" regPoint="topleft" index="5" position="relative" width="10.88" x="53.38"/>
+    <asset value="&#xD;" name="dbgInputTxt" fontSize="18" boxName="dbgPanel_box" textColor="ffffff" index="6" width="31.7" x="18.8" align="center" height="8.58" regPoint="center" font="Arial" type="TextField" y="42.25" position="relative"/>
+    <asset value="&#xD;" name="dbgInputTxt1" fontSize="18" boxName="dbgPanel_box" textColor="ffffff" index="7" width="31.7" x="18.8" align="center" height="8.58" regPoint="center" font="Arial" type="TextField" y="56.05" position="relative"/>
+    <asset value="&#xD;" name="dbgInputTxt2" fontSize="18" boxName="dbgPanel_box" textColor="ffffff" index="8" width="31.7" x="18.8" align="center" height="8.58" regPoint="center" font="Arial" type="TextField" y="28.45" position="relative"/>
+    <asset value="&#xD;" name="inputTestTf" fontSize="16" boxName="dbgPanel_box" textColor="ff1212" index="9" width="47.46" x="1.38" align="center" height="7.86" regPoint="center" font="Arial" type="TextField" y="14.79" position="relative"/>
+    <asset value="&#xD;" name="outputTestTf" fontSize="16" boxName="dbgPanel_box" textColor="ff1212" index="10" width="47.46" x="1.38" align="center" height="41.52" regPoint="center" font="Arial" type="TextField" y="26.74" position="relative"/>
+    <asset type="MovieClip" height="6.67" y="15.43" name="stopAutoBtt" boxName="dbgPanel_box" regPoint="topleft" index="11" position="relative" width="11.96" x="52.4"/>
+    <asset type="MovieClip" height="6.67" y="24.26" name="cb0" boxName="dbgPanel_box" regPoint="topleft" index="12" position="relative" width="11.96" x="52.4"/>
+    <asset type="MovieClip" height="6.67" y="32.72" name="cb1" boxName="dbgPanel_box" regPoint="topleft" index="13" position="relative" width="11.96" x="52.4"/>
+    <asset type="MovieClip" height="6.67" y="66.56" name="testBtt" boxName="dbgPanel_box" regPoint="topleft" index="14" position="relative" width="11.96" x="58.96"/>
+    <asset type="MovieClip" height="6.67" y="41.37" name="cb2" boxName="dbgPanel_box" regPoint="topleft" index="15" position="relative" width="11.96" x="52.4"/>
+    <asset value="sasasas&#xD;" name="timeTestTf" fontSize="16" boxName="dbgPanel_box" textColor="ff1212" index="16" width="25.29" x="52.4" align="center" height="7.86" regPoint="center" font="Arial" type="TextField" y="56.59" position="relative"/>
+    <asset type="MovieClip" height="6.67" y="83.52" name="runPtBtt" boxName="dbgPanel_box" regPoint="topleft" index="17" position="relative" width="11.96" x="58.96"/>
+    <asset type="MovieClip" height="6.67" y="83.52" name="stopPtBtt" boxName="dbgPanel_box" regPoint="topleft" index="18" position="relative" width="11.96" x="74.5"/>
+    <asset type="MovieClip" height="2.3" y="87.95" name="ptcsSlider" boxName="dbgPanel_box" regPoint="topleft" index="19" position="relative" width="24.86" x="13.21"/>
+    <asset value="&#xD;" name="sliderInfoTf" fontSize="16" boxName="dbgPanel_box" textColor="ff1212" index="20" width="6.22" x="22.36" align="center" height="7.86" regPoint="topleft" font="Arial" type="TextField" y="75.66" position="relative"/>
+    <asset type="MovieClip" height="5.98" y="5.98" name="dbgTab1" boxName="dbgPanel_box" regPoint="topleft" index="21" position="relative" width="7.46" x="1.63"/>
+    <asset type="MovieClip" height="5.98" y="5.98" name="dbgTab2" boxName="dbgPanel_box" regPoint="topleft" index="22" position="relative" width="7.46" x="9.09"/>
+    <asset type="MovieClip" height="5.98" y="5.98" name="dbgTab3" boxName="dbgPanel_box" regPoint="topleft" index="23" position="relative" width="7.46" x="16.56"/>
+    <asset value="DEBUG PANEL&#xD;" name="debugLabel" fontSize="23" boxName="dbgPanel_box" textColor="ffffff" index="24" width="50.7" x="24.4" align="center" height="6.82" regPoint="center" font="Arial" type="TextField" y="5.44" position="relative"/>
+    <asset type="MovieClip" height="5.06" y="0" name="topDrag" boxName="dbgPanel_box" regPoint="topleft" index="25" position="relative" width="100.07" x="0"/>
+  </scene>
+</assets>

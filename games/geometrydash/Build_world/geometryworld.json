@@ -1,0 +1,16 @@
+{
+"companyName": "DefaultCompany",
+"productName": "Geometry Lite v2",
+"productVersion": "0.1",
+"dataUrl": "https://geometrylite.github.io/Build_world/geometryworld.data.unityweb",
+"wasmCodeUrl": "https://geometrylite.github.io/Build_world/geometryworld.wasm.code.unityweb",
+"wasmFrameworkUrl": "https://geometrylite.github.io/Build_world/geometryworld.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"splashScreenStyle": "Dark",
+"backgroundColor": "#231F20",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.4.24f1"
+}

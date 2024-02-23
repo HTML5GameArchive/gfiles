@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang=en>
+
+<head>
+    <meta charset="utf-8" />
+    <title>404 Error - File Not Found!</title>
+    <meta name=description content="Sorry - we looked everywhere but we couldn't find the file you wanted!">
+    <meta content="noindex,nofollow" name=robots>
+    <link href=/z/assets/img/frivIcon.png rel="shortcut icon">
+    <style>
+        
+        @font-face {
+            font-family: frivFont;
+            src: url(/z/assets/fonts/frivFont.woff);
+        }
+
+        body,
+        html {
+            background-color: #600090;
+            margin: 0;
+            animation-duration: 100s;
+            animation-iteration-count: infinite;
+            color: rgba(0, 0, 0, .5);
+            font-family: frivFont, arial, helvetica, sans-serif;
+            font-weight: 700;
+            font-size: 2vmin;
+            text-align: center;
+            overflow: hidden;
+            cursor: pointer;
+            animation-name: backColor;
+        }
+
+        @keyframes backColor {
+            0% {
+                background-color: #600090
+            }
+
+            50% {
+                background-color: #6000ff
+            }
+
+            100% {
+                background-color: #600090
+            }
+        }
+
+        #logoContainer {
+            position: relative;
+            height: 80vh
+        }
+
+        #logo,
+        #clickText {
+            animation: hueRotate 20s infinite
+        }
+
+        #logo {
+            z-index: 4;
+            width: 100vw;
+            max-height: 80vh;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            position: absolute
+        }
+
+        #clickText {
+            z-index: 5;
+            position: absolute;
+            bottom: 5vh;
+            left: 0;
+            right: 0;
+            margin-left: auto;
+            margin-right: auto;
+            user-select: none;
+            font-size: 7vmin;
+            color: #afa;
+            text-shadow: 6px 6px 0 rgba(0, 0, 0, .3)
+        }
+
+        @keyframes hueRotate {
+            100% {
+                filter: hue-rotate(360deg)
+            }
+        }
+
+        #shape1,
+        #shape2,
+        #shape3 {
+            position: absolute;
+            opacity: .03;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            position: fixed
+        }
+
+        #shape1 {
+            z-index: 1;
+            margin-left: -100vw;
+            animation-name: shape1Rotate;
+            animation-duration: 70s;
+        }
+
+        @keyframes shape1Rotate {
+            0% {
+                transform: rotate(0)
+            }
+
+            100% {
+                transform: rotate(360deg)
+            }
+        }
+
+        #shape2 {
+            z-index: 2;
+            margin-left: -50vw;
+            margin-top: -100vh;
+            animation-name: shape2Rotate;
+            animation-duration: 40s
+        }
+
+        @keyframes shape2Rotate {
+            0% {
+                transform: rotate(0)
+            }
+
+            100% {
+                transform: rotate(360deg)
+            }
+        }
+
+        #shape3 {
+            z-index: 3;
+            animation-name: shape3Rotate;
+            animation-duration: 30s;
+        }
+
+        @keyframes shape3Rotate {
+            0% {
+                transform: rotate(360deg)
+            }
+
+            100% {
+                transform: rotate(0)
+            }
+        }
+
+        .footer {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            text-align: right;
+            margin-right: 25px
+        }
+
+        #bottom1,
+        #bottom2,
+        #top1,
+        #top2 {
+            background: rgba(255, 255, 255, .03);
+            position: fixed;
+            height: 30px
+        }
+
+        #bottom1,
+        #bottom2 {
+            left: 0;
+            right: 0;
+            bottom: 0
+        }
+
+        #top1,
+        #top2 {
+            left: 0;
+            right: 0;
+            top: 0
+        }
+
+        #top2,
+        #bottom2 {
+            height: 50px
+        }
+
+        #xImg {
+            display: none
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div id=logoContainer><img alt=Friv src=/z/assets/img/frivLogoBrightGreenMin.svg id=logo></div>
+    <div id=clickText>Error 404 - File Not Found.<br>Click to play at friv.com!</div>
+    <svg height=2048 id=shape1 width=2048>
+        <circle cx=400 cy=400 fill=white r=300 /></svg>
+    <svg height=2048 id=shape2 width=2048>
+        <polygon points="1000,100 400,1980 1900,780 100,780 1600,1980" style=fill:#fff /></svg>
+    <svg height=2048 id=shape3 width=2048>
+        <circle cx=400 cy=400 fill=white r=200 /></svg>
+    <div id=top1></div>
+    <div id=top2></div>
+    <div id=bottom1></div>
+    <div id=bottom2></div>
+
+    <script>
+        //click out
+        document.onclick = function() {
+            window.open("https://www.friv.com/index.html?ref=404", "_top")
+        };
+
+        //analytics
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-3596694-29', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+
+    <img alt=stats src=https://whos.amung.us/widget/ciww7kihonq8.png id=xImg> <!-- view: https://whos.amung.us/stats/history/ciww7kihonq8/ -->
